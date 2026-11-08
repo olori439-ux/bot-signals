@@ -292,16 +292,6 @@
    "status": "open"
   },
   {
-   "symbol": "BONKUSDT",
-   "dir": "short",
-   "entry": 2.9e-06,
-   "sl": 3.0347847e-06,
-   "tp1": 2.84e-06,
-   "tp2": 2.75e-06,
-   "time": "2026-11-06T13:09:21.034Z",
-   "status": "open"
-  },
-  {
    "symbol": "SPYBUSDT",
    "dir": "short",
    "entry": 739.09,
