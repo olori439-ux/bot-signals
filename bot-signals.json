@@ -252,16 +252,6 @@
    "status": "pending"
   },
   {
-   "symbol": "COTIUSDT",
-   "dir": "short",
-   "entry": 0.00939,
-   "sl": 0.0097571389,
-   "tp1": 0.00923,
-   "tp2": 0.0087781019,
-   "time": "2026-11-08T17:00:34.322Z",
-   "status": "open"
-  },
-  {
    "symbol": "BCHUSDT",
    "dir": "short",
    "entry": 249.5,
