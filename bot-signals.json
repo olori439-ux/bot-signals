@@ -1,0 +1,575 @@
+{
+ "updated": "2026-11-08T17:00:34.322Z",
+ "signals": [
+  {
+   "symbol": "BFUSDUSDT",
+   "dir": "short",
+   "entry": 0.9996,
+   "sl": 1.00012,
+   "tp1": 0.9994,
+   "tp2": 0.9992,
+   "time": "2026-11-05T09:21:19.948Z",
+   "status": "open"
+  },
+  {
+   "symbol": "SXTUSDT",
+   "dir": "long",
+   "entry": 0.00859,
+   "sl": 0.00786,
+   "tp1": 0.00912,
+   "tp2": 0.01075,
+   "time": "2026-11-05T13:00:19.691Z",
+   "status": "open"
+  },
+  {
+   "symbol": "ASTERUSDT",
+   "dir": "short",
+   "entry": 0.6975,
+   "sl": 0.71477,
+   "tp1": 0.69,
+   "tp2": 0.66871,
+   "time": "2026-11-05T16:15:22.413Z",
+   "status": "open"
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "dir": "short",
+   "entry": 8.458,
+   "sl": 8.83375,
+   "tp1": 8.291,
+   "tp2": 7.83175,
+   "time": "2026-11-05T16:23:19.350Z",
+   "status": "open"
+  },
+  {
+   "symbol": "DASHUSDT",
+   "dir": "short",
+   "entry": 46.51,
+   "sl": 49.62876,
+   "tp1": 44.06,
+   "tp2": 41.31207,
+   "time": "2026-11-05T16:23:19.350Z",
+   "status": "open"
+  },
+  {
+   "symbol": "OPUSDT",
+   "dir": "short",
+   "entry": 0.1037,
+   "sl": 0.11002,
+   "tp1": 0.09948,
+   "tp2": 0.09316,
+   "time": "2026-11-05T18:27:17.502Z",
+   "status": "open"
+  },
+  {
+   "symbol": "VIRTUALUSDT",
+   "dir": "short",
+   "entry": 0.5817,
+   "sl": 0.60954,
+   "tp1": 0.56314,
+   "tp2": 0.53529,
+   "time": "2026-11-05T18:39:17.476Z",
+   "status": "open"
+  },
+  {
+   "symbol": "FOGOUSDT",
+   "dir": "short",
+   "entry": 0.00234,
+   "sl": 0.00271,
+   "tp1": 0.00221,
+   "tp2": 0.00172,
+   "time": "2026-11-05T19:00:18.436Z",
+   "status": "open"
+  },
+  {
+   "symbol": "BEBUSDT",
+   "dir": "short",
+   "entry": 170.4,
+   "sl": 189.49895,
+   "tp1": 157.66737,
+   "tp2": 138.56842,
+   "time": "2026-11-05T21:35:19.812Z",
+   "status": "open"
+  },
+  {
+   "symbol": "MRVLBUSDT",
+   "dir": "short",
+   "entry": 139.84,
+   "sl": 154.42721,
+   "tp1": 130.11519,
+   "tp2": 115.52798,
+   "time": "2026-11-06T00:39:27.481Z",
+   "status": "open"
+  },
+  {
+   "symbol": "WLFIUSDT",
+   "dir": "short",
+   "entry": 0.0478,
+   "sl": 0.05136,
+   "tp1": 0.0454,
+   "tp2": 0.0436,
+   "time": "2026-11-06T01:43:25.257Z",
+   "status": "open"
+  },
+  {
+   "symbol": "AAOIBUSDT",
+   "dir": "short",
+   "entry": 45.42,
+   "sl": 53.42277,
+   "tp1": 40.08482,
+   "tp2": 32.08205,
+   "time": "2026-11-06T01:53:24.176Z",
+   "status": "open"
+  },
+  {
+   "symbol": "WLDUSDT",
+   "dir": "short",
+   "entry": 0.3474,
+   "sl": 0.3681,
+   "tp1": 0.3366,
+   "tp2": 0.31289,
+   "time": "2026-11-06T02:04:23.362Z",
+   "status": "open"
+  },
+  {
+   "symbol": "STRKUSDT",
+   "dir": "short",
+   "entry": 0.04082,
+   "sl": 0.04343,
+   "tp1": 0.03844,
+   "tp2": 0.03647,
+   "time": "2026-11-06T02:40:19.870Z",
+   "status": "open"
+  },
+  {
+   "symbol": "SKHYBUSDT",
+   "dir": "short",
+   "entry": 129.93,
+   "sl": 140.1911,
+   "tp1": 122.74,
+   "tp2": 112.82816,
+   "time": "2026-11-06T03:04:18.846Z",
+   "status": "open"
+  },
+  {
+   "symbol": "XLMUSDT",
+   "dir": "short",
+   "entry": 0.1558,
+   "sl": 0.16196,
+   "tp1": 0.1515,
+   "tp2": 0.14554,
+   "time": "2026-11-06T03:13:20.816Z",
+   "status": "open"
+  },
+  {
+   "symbol": "EWYBUSDT",
+   "dir": "short",
+   "entry": 138.86,
+   "sl": 146.34604,
+   "tp1": 133.8693,
+   "tp2": 126.38326,
+   "time": "2026-11-06T03:15:20.529Z",
+   "status": "open"
+  },
+  {
+   "symbol": "MSTRBUSDT",
+   "dir": "short",
+   "entry": 131.24,
+   "sl": 138.45803,
+   "tp1": 124.14,
+   "tp2": 119.20994,
+   "time": "2026-11-06T03:18:20.705Z",
+   "status": "open"
+  },
+  {
+   "symbol": "THEUSDT",
+   "dir": "short",
+   "entry": 0.0404,
+   "sl": 0.04525,
+   "tp1": 0.0364,
+   "tp2": 0.03232,
+   "time": "2026-11-06T03:19:20.244Z",
+   "status": "open"
+  },
+  {
+   "symbol": "RLSUSDT",
+   "dir": "short",
+   "entry": 0.00201,
+   "sl": 0.0021,
+   "tp1": 0.00189,
+   "tp2": 0.00185,
+   "time": "2026-11-06T04:20:06.829Z",
+   "status": "open"
+  },
+  {
+   "symbol": "SUIUSDT",
+   "dir": "short",
+   "entry": 0.8654,
+   "sl": 0.90072,
+   "tp1": 0.8409,
+   "tp2": 0.80653,
+   "time": "2026-11-06T06:00:20.859Z",
+   "status": "open"
+  },
+  {
+   "symbol": "BNCBUSDT",
+   "dir": "short",
+   "entry": 4.83,
+   "sl": 5.03857,
+   "tp1": 4.54,
+   "tp2": 4.48238,
+   "time": "2026-11-06T06:10:20.141Z",
+   "status": "open"
+  },
+  {
+   "symbol": "PENGUUSDT",
+   "dir": "short",
+   "entry": 0.00663,
+   "sl": 0.00695,
+   "tp1": 0.00637,
+   "tp2": 0.00611,
+   "time": "2026-11-06T08:00:20.315Z",
+   "status": "open"
+  },
+  {
+   "symbol": "CAKEUSDT",
+   "dir": "short",
+   "entry": 1.932,
+   "sl": 1.98776,
+   "tp1": 1.905,
+   "tp2": 1.865,
+   "time": "2026-11-06T08:00:20.315Z",
+   "status": "open"
+  },
+  {
+   "symbol": "TAOUSDT",
+   "dir": "short",
+   "entry": 222,
+   "sl": 230.85259,
+   "tp1": 217.8,
+   "tp2": 214.1,
+   "time": "2026-11-06T08:02:20.001Z",
+   "status": "open"
+  },
+  {
+   "symbol": "CRCLBUSDT",
+   "dir": "short",
+   "entry": 69.33,
+   "sl": 72.87688,
+   "tp1": 67.18,
+   "tp2": 65,
+   "time": "2026-11-06T09:13:21.212Z",
+   "status": "open"
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "dir": "short",
+   "entry": 0.07246,
+   "sl": 0.07472,
+   "tp1": 0.07117,
+   "tp2": 0.0702,
+   "time": "2026-11-06T09:16:21.216Z",
+   "status": "open"
+  },
+  {
+   "symbol": "CELOUSDT",
+   "dir": "short",
+   "entry": 0.06871,
+   "sl": 0.07169,
+   "tp1": 0.06621,
+   "tp2": 0.06375,
+   "time": "2026-11-06T09:26:20.443Z",
+   "status": "open"
+  },
+  {
+   "symbol": "PEPEUSDT",
+   "dir": "long",
+   "entry": 4.95e-06,
+   "sl": 4.6626255e-06,
+   "tp1": 5.06e-06,
+   "tp2": 5.18e-06,
+   "time": "2026-11-06T10:24:34.942Z",
+   "status": "open"
+  },
+  {
+   "symbol": "BMNRBUSDT",
+   "dir": "short",
+   "entry": 19.1,
+   "sl": 20.06952,
+   "tp1": 18.6,
+   "tp2": 17.484134,
+   "time": "2026-11-06T11:58:17.269Z",
+   "status": "open"
+  },
+  {
+   "symbol": "INTWBUSDT",
+   "dir": "short",
+   "entry": 5.24,
+   "sl": 5.7988546,
+   "tp1": 4.69,
+   "tp2": 4.3,
+   "time": "2026-11-06T12:10:20.716Z",
+   "status": "open"
+  },
+  {
+   "symbol": "BONKUSDT",
+   "dir": "short",
+   "entry": 2.9e-06,
+   "sl": 3.0347847e-06,
+   "tp1": 2.84e-06,
+   "tp2": 2.75e-06,
+   "time": "2026-11-06T13:09:21.034Z",
+   "status": "open"
+  },
+  {
+   "symbol": "SPYBUSDT",
+   "dir": "short",
+   "entry": 739.09,
+   "sl": 748.80728,
+   "tp1": 731.65,
+   "tp2": 722.89454,
+   "time": "2026-11-06T14:41:18.568Z",
+   "status": "open"
+  },
+  {
+   "symbol": "UNIUSDT",
+   "dir": "short",
+   "entry": 7.031,
+   "sl": 7.3012367,
+   "tp1": 6.861,
+   "tp2": 6.765,
+   "time": "2026-11-07T02:35:40.374Z",
+   "status": "open"
+  },
+  {
+   "symbol": "APTUSDT",
+   "dir": "short",
+   "entry": 0.6036,
+   "sl": 0.62343609,
+   "tp1": 0.5966,
+   "tp2": 0.5766,
+   "time": "2026-11-07T04:36:38.020Z",
+   "status": "open"
+  },
+  {
+   "symbol": "ICPUSDT",
+   "dir": "short",
+   "entry": 2.439,
+   "sl": 2.5016376,
+   "tp1": 2.414,
+   "tp2": 2.366,
+   "time": "2026-11-07T19:32:35.661Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "PYTHUSDT",
+   "dir": "short",
+   "entry": 0.06464,
+   "sl": 0.06648482,
+   "tp1": 0.06372,
+   "tp2": 0.0617,
+   "time": "2026-11-07T20:00:38.064Z",
+   "status": "open"
+  },
+  {
+   "symbol": "SIGNUSDT",
+   "dir": "short",
+   "entry": 0.0093,
+   "sl": 0.010194388,
+   "tp1": 0.0087037416,
+   "tp2": 0.007809354,
+   "time": "2026-11-07T21:00:36.080Z",
+   "status": "open"
+  },
+  {
+   "symbol": "POLUSDT",
+   "dir": "short",
+   "entry": 0.09032,
+   "sl": 0.09221407,
+   "tp1": 0.089057287,
+   "tp2": 0.087163217,
+   "time": "2026-11-08T00:09:43.008Z",
+   "status": "open"
+  },
+  {
+   "symbol": "MEGAUSDT",
+   "dir": "long",
+   "entry": 0.04847,
+   "sl": 0.046010998,
+   "tp1": 0.04957,
+   "tp2": 0.05098,
+   "time": "2026-11-08T01:00:42.712Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "TIAUSDT",
+   "dir": "short",
+   "entry": 0.4425,
+   "sl": 0.45821294,
+   "tp1": 0.4351,
+   "tp2": 0.4152,
+   "time": "2026-11-08T01:00:42.712Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "WBETHUSDT",
+   "dir": "short",
+   "entry": 2485.94,
+   "sl": 2519.7724,
+   "tp1": 2474.09,
+   "tp2": 2453.03,
+   "time": "2026-11-08T03:04:33.253Z",
+   "status": "open"
+  },
+  {
+   "symbol": "MUBUSDT",
+   "dir": "short",
+   "entry": 694.89,
+   "sl": 710.51548,
+   "tp1": 688.5,
+   "tp2": 678.26,
+   "time": "2026-11-08T04:00:36.731Z",
+   "status": "open"
+  },
+  {
+   "symbol": "BTCUSDT",
+   "dir": "short",
+   "entry": 76102.52,
+   "sl": 76605.01,
+   "tp1": 75828.99,
+   "tp2": 75600.82,
+   "time": "2026-11-08T04:12:34.682Z",
+   "status": "open"
+  },
+  {
+   "symbol": "XRPUSDT",
+   "dir": "short",
+   "entry": 1.1647,
+   "sl": 1.1852441,
+   "tp1": 1.1528,
+   "tp2": 1.1304599,
+   "time": "2026-11-08T06:32:36.011Z",
+   "status": "open"
+  },
+  {
+   "symbol": "ADAUSDT",
+   "dir": "short",
+   "entry": 0.182,
+   "sl": 0.18511677,
+   "tp1": 0.1803,
+   "tp2": 0.1777,
+   "time": "2026-11-08T12:17:32.782Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "HBARUSDT",
+   "dir": "short",
+   "entry": 0.06697,
+   "sl": 0.068021121,
+   "tp1": 0.06661,
+   "tp2": 0.065218131,
+   "time": "2026-11-08T12:21:33.576Z",
+   "status": "open"
+  },
+  {
+   "symbol": "PUMPUSDT",
+   "dir": "short",
+   "entry": 0.003726,
+   "sl": 0.0038665037,
+   "tp1": 0.003638,
+   "tp2": 0.003568,
+   "time": "2026-11-08T13:25:33.150Z",
+   "status": "open"
+  },
+  {
+   "symbol": "ONDOUSDT",
+   "dir": "short",
+   "entry": 0.3646,
+   "sl": 0.37237608,
+   "tp1": 0.361,
+   "tp2": 0.3577,
+   "time": "2026-11-08T13:26:33.145Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ENAUSDT",
+   "dir": "short",
+   "entry": 0.1553,
+   "sl": 0.16069777,
+   "tp1": 0.1533,
+   "tp2": 0.14630371,
+   "time": "2026-11-08T13:33:33.893Z",
+   "status": "open"
+  },
+  {
+   "symbol": "HYPEUSDT",
+   "dir": "short",
+   "entry": 77.87,
+   "sl": 79.330797,
+   "tp1": 77.15,
+   "tp2": 76.25,
+   "time": "2026-11-08T13:42:33.134Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "NEARUSDT",
+   "dir": "short",
+   "entry": 3.686,
+   "sl": 3.7939585,
+   "tp1": 3.639,
+   "tp2": 3.5060692,
+   "time": "2026-11-08T14:00:32.283Z",
+   "status": "open"
+  },
+  {
+   "symbol": "KORUBUSDT",
+   "dir": "short",
+   "entry": 7.03,
+   "sl": 7.2111222,
+   "tp1": 6.93,
+   "tp2": 6.74,
+   "time": "2026-11-08T14:00:32.283Z",
+   "status": "open"
+  },
+  {
+   "symbol": "DODOUSDT",
+   "dir": "long",
+   "entry": 0.02194,
+   "sl": 0.021595387,
+   "tp1": 0.02213,
+   "tp2": 0.02225,
+   "time": "2026-11-08T16:24:33.279Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "牛来USDT",
+   "dir": "short",
+   "entry": 0.0577,
+   "sl": 0.060642751,
+   "tp1": 0.05611,
+   "tp2": 0.05415,
+   "time": "2026-11-08T16:40:32.996Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "TRUMPUSDT",
+   "dir": "short",
+   "entry": 1.189,
+   "sl": 1.2301115,
+   "tp1": 1.171,
+   "tp2": 1.155,
+   "time": "2026-11-08T17:00:34.322Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "COTIUSDT",
+   "dir": "short",
+   "entry": 0.00939,
+   "sl": 0.0097571389,
+   "tp1": 0.00923,
+   "tp2": 0.0087781019,
+   "time": "2026-11-08T17:00:34.322Z",
+   "status": "pending"
+  }
+ ]
+}
