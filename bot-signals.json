@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T23:22:34.820Z",
+ "updated": "2026-11-08T23:44:38.171Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -309,6 +309,16 @@
    "tp1": 8.0352932,
    "tp2": 7.768733,
    "time": "2026-11-08T23:22:34.820Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "NEIROUSDT",
+   "dir": "short",
+   "entry": 5.969e-05,
+   "sl": 6.3483385e-05,
+   "tp1": 5.836e-05,
+   "tp2": 5.3367691e-05,
+   "time": "2026-11-08T23:44:38.171Z",
    "status": "pending"
   }
  ]
