@@ -522,16 +522,6 @@
    "status": "open"
   },
   {
-   "symbol": "KORUBUSDT",
-   "dir": "short",
-   "entry": 7.03,
-   "sl": 7.2111222,
-   "tp1": 6.93,
-   "tp2": 6.74,
-   "time": "2026-11-08T14:00:32.283Z",
-   "status": "open"
-  },
-  {
    "symbol": "DODOUSDT",
    "dir": "long",
    "entry": 0.02194,
