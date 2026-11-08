@@ -332,16 +332,6 @@
    "status": "open"
   },
   {
-   "symbol": "PYTHUSDT",
-   "dir": "short",
-   "entry": 0.06464,
-   "sl": 0.06648482,
-   "tp1": 0.06372,
-   "tp2": 0.0617,
-   "time": "2026-11-07T20:00:38.064Z",
-   "status": "open"
-  },
-  {
    "symbol": "SIGNUSDT",
    "dir": "short",
    "entry": 0.0093,
