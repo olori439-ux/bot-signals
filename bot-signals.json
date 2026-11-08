@@ -182,16 +182,6 @@
    "status": "open"
   },
   {
-   "symbol": "RLSUSDT",
-   "dir": "short",
-   "entry": 0.00201,
-   "sl": 0.0021,
-   "tp1": 0.00189,
-   "tp2": 0.00185,
-   "time": "2026-11-06T04:20:06.829Z",
-   "status": "open"
-  },
-  {
    "symbol": "SUIUSDT",
    "dir": "short",
    "entry": 0.8654,
@@ -222,16 +212,6 @@
    "status": "open"
   },
   {
-   "symbol": "CAKEUSDT",
-   "dir": "short",
-   "entry": 1.932,
-   "sl": 1.98776,
-   "tp1": 1.905,
-   "tp2": 1.865,
-   "time": "2026-11-06T08:00:20.315Z",
-   "status": "open"
-  },
-  {
    "symbol": "TAOUSDT",
    "dir": "short",
    "entry": 222,
@@ -249,16 +229,6 @@
    "tp1": 67.18,
    "tp2": 65,
    "time": "2026-11-06T09:13:21.212Z",
-   "status": "open"
-  },
-  {
-   "symbol": "PEPEUSDT",
-   "dir": "long",
-   "entry": 4.95e-06,
-   "sl": 4.6626255e-06,
-   "tp1": 5.06e-06,
-   "tp2": 5.18e-06,
-   "time": "2026-11-06T10:24:34.942Z",
    "status": "open"
   },
   {
@@ -299,16 +269,6 @@
    "tp1": 6.861,
    "tp2": 6.765,
    "time": "2026-11-07T02:35:40.374Z",
-   "status": "open"
-  },
-  {
-   "symbol": "APTUSDT",
-   "dir": "short",
-   "entry": 0.6036,
-   "sl": 0.62343609,
-   "tp1": 0.5966,
-   "tp2": 0.5766,
-   "time": "2026-11-07T04:36:38.020Z",
    "status": "open"
   },
   {
