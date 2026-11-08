@@ -12,16 +12,6 @@
    "status": "open"
   },
   {
-   "symbol": "AVAXUSDT",
-   "dir": "short",
-   "entry": 8.458,
-   "sl": 8.83375,
-   "tp1": 8.291,
-   "tp2": 7.83175,
-   "time": "2026-11-05T16:23:19.350Z",
-   "status": "open"
-  },
-  {
    "symbol": "DASHUSDT",
    "dir": "short",
    "entry": 46.51,
@@ -39,16 +29,6 @@
    "tp1": 0.09948,
    "tp2": 0.09316,
    "time": "2026-11-05T18:27:17.502Z",
-   "status": "open"
-  },
-  {
-   "symbol": "VIRTUALUSDT",
-   "dir": "short",
-   "entry": 0.5817,
-   "sl": 0.60954,
-   "tp1": 0.56314,
-   "tp2": 0.53529,
-   "time": "2026-11-05T18:39:17.476Z",
    "status": "open"
   },
   {
@@ -102,26 +82,6 @@
    "status": "open"
   },
   {
-   "symbol": "WLDUSDT",
-   "dir": "short",
-   "entry": 0.3474,
-   "sl": 0.3681,
-   "tp1": 0.3366,
-   "tp2": 0.31289,
-   "time": "2026-11-06T02:04:23.362Z",
-   "status": "open"
-  },
-  {
-   "symbol": "STRKUSDT",
-   "dir": "short",
-   "entry": 0.04082,
-   "sl": 0.04343,
-   "tp1": 0.03844,
-   "tp2": 0.03647,
-   "time": "2026-11-06T02:40:19.870Z",
-   "status": "open"
-  },
-  {
    "symbol": "SKHYBUSDT",
    "dir": "short",
    "entry": 129.93,
@@ -129,16 +89,6 @@
    "tp1": 122.74,
    "tp2": 112.82816,
    "time": "2026-11-06T03:04:18.846Z",
-   "status": "open"
-  },
-  {
-   "symbol": "XLMUSDT",
-   "dir": "short",
-   "entry": 0.1558,
-   "sl": 0.16196,
-   "tp1": 0.1515,
-   "tp2": 0.14554,
-   "time": "2026-11-06T03:13:20.816Z",
    "status": "open"
   },
   {
@@ -162,26 +112,6 @@
    "status": "open"
   },
   {
-   "symbol": "THEUSDT",
-   "dir": "short",
-   "entry": 0.0404,
-   "sl": 0.04525,
-   "tp1": 0.0364,
-   "tp2": 0.03232,
-   "time": "2026-11-06T03:19:20.244Z",
-   "status": "open"
-  },
-  {
-   "symbol": "SUIUSDT",
-   "dir": "short",
-   "entry": 0.8654,
-   "sl": 0.90072,
-   "tp1": 0.8409,
-   "tp2": 0.80653,
-   "time": "2026-11-06T06:00:20.859Z",
-   "status": "open"
-  },
-  {
    "symbol": "BNCBUSDT",
    "dir": "short",
    "entry": 4.83,
@@ -189,16 +119,6 @@
    "tp1": 4.54,
    "tp2": 4.48238,
    "time": "2026-11-06T06:10:20.141Z",
-   "status": "open"
-  },
-  {
-   "symbol": "TAOUSDT",
-   "dir": "short",
-   "entry": 222,
-   "sl": 230.85259,
-   "tp1": 217.8,
-   "tp2": 214.1,
-   "time": "2026-11-06T08:02:20.001Z",
    "status": "open"
   },
   {
@@ -252,16 +172,6 @@
    "status": "open"
   },
   {
-   "symbol": "POLUSDT",
-   "dir": "short",
-   "entry": 0.09032,
-   "sl": 0.09221407,
-   "tp1": 0.089057287,
-   "tp2": 0.087163217,
-   "time": "2026-11-08T00:09:43.008Z",
-   "status": "open"
-  },
-  {
    "symbol": "MEGAUSDT",
    "dir": "long",
    "entry": 0.04847,
@@ -269,7 +179,7 @@
    "tp1": 0.04957,
    "tp2": 0.05098,
    "time": "2026-11-08T01:00:42.712Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "TIAUSDT",
@@ -282,16 +192,6 @@
    "status": "pending"
   },
   {
-   "symbol": "MUBUSDT",
-   "dir": "short",
-   "entry": 694.89,
-   "sl": 710.51548,
-   "tp1": 688.5,
-   "tp2": 678.26,
-   "time": "2026-11-08T04:00:36.731Z",
-   "status": "open"
-  },
-  {
    "symbol": "ADAUSDT",
    "dir": "short",
    "entry": 0.182,
@@ -300,16 +200,6 @@
    "tp2": 0.1777,
    "time": "2026-11-08T12:17:32.782Z",
    "status": "pending"
-  },
-  {
-   "symbol": "PUMPUSDT",
-   "dir": "short",
-   "entry": 0.003726,
-   "sl": 0.0038665037,
-   "tp1": 0.003638,
-   "tp2": 0.003568,
-   "time": "2026-11-08T13:25:33.150Z",
-   "status": "open"
   },
   {
    "symbol": "ONDOUSDT",
@@ -322,16 +212,6 @@
    "status": "pending"
   },
   {
-   "symbol": "ENAUSDT",
-   "dir": "short",
-   "entry": 0.1553,
-   "sl": 0.16069777,
-   "tp1": 0.1533,
-   "tp2": 0.14630371,
-   "time": "2026-11-08T13:33:33.893Z",
-   "status": "open"
-  },
-  {
    "symbol": "HYPEUSDT",
    "dir": "short",
    "entry": 77.87,
@@ -340,16 +220,6 @@
    "tp2": 76.25,
    "time": "2026-11-08T13:42:33.134Z",
    "status": "pending"
-  },
-  {
-   "symbol": "NEARUSDT",
-   "dir": "short",
-   "entry": 3.686,
-   "sl": 3.7939585,
-   "tp1": 3.639,
-   "tp2": 3.5060692,
-   "time": "2026-11-08T14:00:32.283Z",
-   "status": "open"
   },
   {
    "symbol": "DODOUSDT",
