@@ -352,16 +352,6 @@
    "status": "open"
   },
   {
-   "symbol": "ICPUSDT",
-   "dir": "short",
-   "entry": 2.439,
-   "sl": 2.5016376,
-   "tp1": 2.414,
-   "tp2": 2.366,
-   "time": "2026-11-07T19:32:35.661Z",
-   "status": "pending"
-  },
-  {
    "symbol": "PYTHUSDT",
    "dir": "short",
    "entry": 0.06464,
