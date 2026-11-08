@@ -252,16 +252,6 @@
    "status": "open"
   },
   {
-   "symbol": "DOGEUSDT",
-   "dir": "short",
-   "entry": 0.07246,
-   "sl": 0.07472,
-   "tp1": 0.07117,
-   "tp2": 0.0702,
-   "time": "2026-11-06T09:16:21.216Z",
-   "status": "open"
-  },
-  {
    "symbol": "PEPEUSDT",
    "dir": "long",
    "entry": 4.95e-06,
@@ -360,16 +350,6 @@
    "tp2": 0.4152,
    "time": "2026-11-08T01:00:42.712Z",
    "status": "pending"
-  },
-  {
-   "symbol": "WBETHUSDT",
-   "dir": "short",
-   "entry": 2485.94,
-   "sl": 2519.7724,
-   "tp1": 2474.09,
-   "tp2": 2453.03,
-   "time": "2026-11-08T03:04:33.253Z",
-   "status": "open"
   },
   {
    "symbol": "MUBUSDT",
