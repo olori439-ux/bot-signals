@@ -12,16 +12,6 @@
    "status": "open"
   },
   {
-   "symbol": "SXTUSDT",
-   "dir": "long",
-   "entry": 0.00859,
-   "sl": 0.00786,
-   "tp1": 0.00912,
-   "tp2": 0.01075,
-   "time": "2026-11-05T13:00:19.691Z",
-   "status": "open"
-  },
-  {
    "symbol": "ASTERUSDT",
    "dir": "short",
    "entry": 0.6975,
