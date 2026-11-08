@@ -272,16 +272,6 @@
    "status": "open"
   },
   {
-   "symbol": "CELOUSDT",
-   "dir": "short",
-   "entry": 0.06871,
-   "sl": 0.07169,
-   "tp1": 0.06621,
-   "tp2": 0.06375,
-   "time": "2026-11-06T09:26:20.443Z",
-   "status": "open"
-  },
-  {
    "symbol": "PEPEUSDT",
    "dir": "long",
    "entry": 4.95e-06,
