@@ -452,16 +452,6 @@
    "status": "pending"
   },
   {
-   "symbol": "HBARUSDT",
-   "dir": "short",
-   "entry": 0.06697,
-   "sl": 0.068021121,
-   "tp1": 0.06661,
-   "tp2": 0.065218131,
-   "time": "2026-11-08T12:21:33.576Z",
-   "status": "open"
-  },
-  {
    "symbol": "PUMPUSDT",
    "dir": "short",
    "entry": 0.003726,
