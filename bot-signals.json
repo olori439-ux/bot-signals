@@ -392,16 +392,6 @@
    "status": "open"
   },
   {
-   "symbol": "BTCUSDT",
-   "dir": "short",
-   "entry": 76102.52,
-   "sl": 76605.01,
-   "tp1": 75828.99,
-   "tp2": 75600.82,
-   "time": "2026-11-08T04:12:34.682Z",
-   "status": "open"
-  },
-  {
    "symbol": "XRPUSDT",
    "dir": "short",
    "entry": 1.1647,
