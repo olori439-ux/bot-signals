@@ -222,16 +222,6 @@
    "status": "pending"
   },
   {
-   "symbol": "DODOUSDT",
-   "dir": "long",
-   "entry": 0.02194,
-   "sl": 0.021595387,
-   "tp1": 0.02213,
-   "tp2": 0.02225,
-   "time": "2026-11-08T16:24:33.279Z",
-   "status": "open"
-  },
-  {
    "symbol": "牛来USDT",
    "dir": "short",
    "entry": 0.0577,
