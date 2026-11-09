@@ -22,16 +22,6 @@
    "status": "open"
   },
   {
-   "symbol": "OPUSDT",
-   "dir": "short",
-   "entry": 0.1037,
-   "sl": 0.11002,
-   "tp1": 0.09948,
-   "tp2": 0.09316,
-   "time": "2026-11-05T18:27:17.502Z",
-   "status": "open"
-  },
-  {
    "symbol": "FOGOUSDT",
    "dir": "short",
    "entry": 0.00234,
