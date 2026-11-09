@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:16:36.635Z",
+ "updated": "2026-11-09T01:51:36.578Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -390,6 +390,16 @@
    "tp2": 281.5,
    "time": "2026-11-09T01:16:36.635Z",
    "status": "open"
+  },
+  {
+   "symbol": "APTUSDT",
+   "dir": "short",
+   "entry": 0.5921,
+   "sl": 0.61663539,
+   "tp1": 0.5804,
+   "tp2": 0.55120768,
+   "time": "2026-11-09T01:51:36.578Z",
+   "status": "pending"
   }
  ]
 }
