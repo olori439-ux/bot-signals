@@ -102,16 +102,6 @@
    "status": "open"
   },
   {
-   "symbol": "SPYBUSDT",
-   "dir": "short",
-   "entry": 739.09,
-   "sl": 748.80728,
-   "tp1": 731.65,
-   "tp2": 722.89454,
-   "time": "2026-11-06T14:41:18.568Z",
-   "status": "open"
-  },
-  {
    "symbol": "SIGNUSDT",
    "dir": "short",
    "entry": 0.0093,
