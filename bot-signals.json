@@ -409,7 +409,7 @@
    "tp1": 0.0393,
    "tp2": 0.03845,
    "time": "2026-11-09T09:25:31.977Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "STRKUSDT",
@@ -429,7 +429,7 @@
    "tp1": 0.06383,
    "tp2": 0.06007,
    "time": "2026-11-09T10:42:36.737Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "TRXUSDT",
