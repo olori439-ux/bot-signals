@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "BEBUSDT",
-   "dir": "short",
-   "entry": 170.4,
-   "sl": 189.49895,
-   "tp1": 157.66737,
-   "tp2": 138.56842,
-   "time": "2026-11-05T21:35:19.812Z",
-   "status": "open"
-  },
-  {
    "symbol": "MRVLBUSDT",
    "dir": "short",
    "entry": 139.84,
