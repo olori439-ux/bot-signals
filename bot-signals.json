@@ -162,16 +162,6 @@
    "status": "open"
   },
   {
-   "symbol": "ZENUSDT",
-   "dir": "short",
-   "entry": 4.842,
-   "sl": 5.0482979,
-   "tp1": 4.7044681,
-   "tp2": 4.4981702,
-   "time": "2026-11-08T22:52:35.976Z",
-   "status": "open"
-  },
-  {
    "symbol": "MITOUSDT",
    "dir": "short",
    "entry": 0.00772,
