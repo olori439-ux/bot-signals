@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "ONDOUSDT",
-   "dir": "short",
-   "entry": 0.3646,
-   "sl": 0.37237608,
-   "tp1": 0.361,
-   "tp2": 0.3577,
-   "time": "2026-11-08T13:26:33.145Z",
-   "status": "pending"
-  },
-  {
    "symbol": "HYPEUSDT",
    "dir": "short",
    "entry": 77.87,
