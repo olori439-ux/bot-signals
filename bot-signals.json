@@ -62,16 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "BCHUSDT",
-   "dir": "short",
-   "entry": 249.5,
-   "sl": 256.17705,
-   "tp1": 244.9,
-   "tp2": 238.37159,
-   "time": "2026-11-08T18:12:34.707Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ATMUSDT",
    "dir": "short",
    "entry": 0.719,
