@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:51:36.578Z",
+ "updated": "2026-11-09T02:00:37.980Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -389,6 +389,16 @@
    "tp1": 0.5804,
    "tp2": 0.55120768,
    "time": "2026-11-09T01:51:36.578Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "DRAMBUSDT",
+   "dir": "short",
+   "entry": 39.54,
+   "sl": 40.886191,
+   "tp1": 38.64,
+   "tp2": 36.67,
+   "time": "2026-11-09T02:00:37.980Z",
    "status": "pending"
   }
  ]
