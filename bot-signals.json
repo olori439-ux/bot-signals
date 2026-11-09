@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "MRVLBUSDT",
-   "dir": "short",
-   "entry": 139.84,
-   "sl": 154.42721,
-   "tp1": 130.11519,
-   "tp2": 115.52798,
-   "time": "2026-11-06T00:39:27.481Z",
-   "status": "open"
-  },
-  {
    "symbol": "WLFIUSDT",
    "dir": "short",
    "entry": 0.0478,
