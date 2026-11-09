@@ -322,16 +322,6 @@
    "status": "pending"
   },
   {
-   "symbol": "GOOGLBUSDT",
-   "dir": "short",
-   "entry": 285.28,
-   "sl": 289.73393,
-   "tp1": 283.74,
-   "tp2": 281.5,
-   "time": "2026-11-09T01:16:36.635Z",
-   "status": "open"
-  },
-  {
    "symbol": "APTUSDT",
    "dir": "short",
    "entry": 0.5921,
@@ -439,7 +429,7 @@
    "tp1": 0.03665,
    "tp2": 0.03593,
    "time": "2026-11-09T10:33:32.520Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "CELOUSDT",
