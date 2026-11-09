@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T07:32:43.046Z",
+ "updated": "2026-11-09T08:00:43.697Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -419,6 +419,26 @@
    "tp1": 0.13148764,
    "tp2": 0.1161691,
    "time": "2026-11-09T07:32:43.046Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ETHFIUSDT",
+   "dir": "short",
+   "entry": 0.585,
+   "sl": 0.61336309,
+   "tp1": 0.5721,
+   "tp2": 0.5594,
+   "time": "2026-11-09T08:00:43.697Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "RENDERUSDT",
+   "dir": "short",
+   "entry": 1.561,
+   "sl": 1.6337151,
+   "tp1": 1.529,
+   "tp2": 1.474,
+   "time": "2026-11-09T08:00:43.697Z",
    "status": "pending"
   }
  ]
