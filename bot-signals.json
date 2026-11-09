@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T01:00:35.720Z",
+ "updated": "2026-11-09T01:01:37.044Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -349,7 +349,7 @@
    "tp1": 1.577,
    "tp2": 1.4786841,
    "time": "2026-11-09T01:00:35.720Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "ICPUSDT",
@@ -359,6 +359,26 @@
    "tp1": 2.373,
    "tp2": 2.267297,
    "time": "2026-11-09T01:00:35.720Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "SUIUSDT",
+   "dir": "short",
+   "entry": 0.854,
+   "sl": 0.88486554,
+   "tp1": 0.8304,
+   "tp2": 0.80255743,
+   "time": "2026-11-09T01:01:37.044Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "LINKUSDT",
+   "dir": "short",
+   "entry": 10.756,
+   "sl": 11.098162,
+   "tp1": 10.509,
+   "tp2": 10.185731,
+   "time": "2026-11-09T01:01:37.044Z",
    "status": "pending"
   }
  ]
