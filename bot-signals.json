@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T12:00:37.949Z",
+ "updated": "2026-11-09T12:50:34.097Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -302,16 +302,6 @@
    "status": "pending"
   },
   {
-   "symbol": "DRAMBUSDT",
-   "dir": "short",
-   "entry": 39.54,
-   "sl": 40.886191,
-   "tp1": 38.64,
-   "tp2": 36.67,
-   "time": "2026-11-09T02:00:37.980Z",
-   "status": "open"
-  },
-  {
    "symbol": "ZROUSDT",
    "dir": "short",
    "entry": 1.618,
@@ -340,16 +330,6 @@
    "tp2": 0.00052397076,
    "time": "2026-11-09T05:00:35.135Z",
    "status": "pending"
-  },
-  {
-   "symbol": "ETHFIUSDT",
-   "dir": "short",
-   "entry": 0.585,
-   "sl": 0.61336309,
-   "tp1": 0.5721,
-   "tp2": 0.5594,
-   "time": "2026-11-09T08:00:43.697Z",
-   "status": "open"
   },
   {
    "symbol": "RENDERUSDT",
@@ -419,6 +399,16 @@
    "tp1": 0.3174,
    "tp2": 0.31549594,
    "time": "2026-11-09T12:00:37.949Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "NEIROUSDT",
+   "dir": "short",
+   "entry": 6.006e-05,
+   "sl": 6.3503023e-05,
+   "tp1": 5.814e-05,
+   "tp2": 5.4321629e-05,
+   "time": "2026-11-09T12:50:34.097Z",
    "status": "pending"
   }
  ]
