@@ -342,16 +342,6 @@
    "status": "pending"
   },
   {
-   "symbol": "ZROUSDT",
-   "dir": "short",
-   "entry": 1.604,
-   "sl": 1.6791895,
-   "tp1": 1.577,
-   "tp2": 1.4786841,
-   "time": "2026-11-09T01:00:35.720Z",
-   "status": "open"
-  },
-  {
    "symbol": "ICPUSDT",
    "dir": "short",
    "entry": 2.402,
