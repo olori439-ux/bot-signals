@@ -72,26 +72,6 @@
    "status": "open"
   },
   {
-   "symbol": "SKHYBUSDT",
-   "dir": "short",
-   "entry": 129.93,
-   "sl": 140.1911,
-   "tp1": 122.74,
-   "tp2": 112.82816,
-   "time": "2026-11-06T03:04:18.846Z",
-   "status": "open"
-  },
-  {
-   "symbol": "EWYBUSDT",
-   "dir": "short",
-   "entry": 138.86,
-   "sl": 146.34604,
-   "tp1": 133.8693,
-   "tp2": 126.38326,
-   "time": "2026-11-06T03:15:20.529Z",
-   "status": "open"
-  },
-  {
    "symbol": "MSTRBUSDT",
    "dir": "short",
    "entry": 131.24,
