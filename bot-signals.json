@@ -212,16 +212,6 @@
    "status": "open"
   },
   {
-   "symbol": "NEARUSDT",
-   "dir": "short",
-   "entry": 3.497,
-   "sl": 3.6705659,
-   "tp1": 3.3812894,
-   "tp2": 3.2077234,
-   "time": "2026-11-09T08:22:44.789Z",
-   "status": "open"
-  },
-  {
    "symbol": "NIGHTUSDT",
    "dir": "short",
    "entry": 0.04024,
