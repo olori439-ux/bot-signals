@@ -372,16 +372,6 @@
    "status": "open"
   },
   {
-   "symbol": "TIAUSDT",
-   "dir": "short",
-   "entry": 0.4243,
-   "sl": 0.44326217,
-   "tp1": 0.4159,
-   "tp2": 0.3973,
-   "time": "2026-11-09T04:04:47.040Z",
-   "status": "open"
-  },
-  {
    "symbol": "HOTUSDT",
    "dir": "long",
    "entry": 0.00041,
