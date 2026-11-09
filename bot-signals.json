@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "HYPEUSDT",
-   "dir": "short",
-   "entry": 77.87,
-   "sl": 79.330797,
-   "tp1": 77.15,
-   "tp2": 76.25,
-   "time": "2026-11-08T13:42:33.134Z",
-   "status": "pending"
-  },
-  {
    "symbol": "TRUMPUSDT",
    "dir": "short",
    "entry": 1.189,
