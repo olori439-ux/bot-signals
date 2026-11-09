@@ -252,16 +252,6 @@
    "status": "pending"
   },
   {
-   "symbol": "NEIROUSDT",
-   "dir": "short",
-   "entry": 5.969e-05,
-   "sl": 6.3483385e-05,
-   "tp1": 5.836e-05,
-   "tp2": 5.3367691e-05,
-   "time": "2026-11-08T23:44:38.171Z",
-   "status": "open"
-  },
-  {
    "symbol": "MITOUSDT",
    "dir": "short",
    "entry": 0.00772,
