@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "ADAUSDT",
-   "dir": "short",
-   "entry": 0.182,
-   "sl": 0.18511677,
-   "tp1": 0.1803,
-   "tp2": 0.1777,
-   "time": "2026-11-08T12:17:32.782Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ONDOUSDT",
    "dir": "short",
    "entry": 0.3646,
