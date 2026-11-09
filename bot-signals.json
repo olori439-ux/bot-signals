@@ -122,16 +122,6 @@
    "status": "open"
   },
   {
-   "symbol": "CRCLBUSDT",
-   "dir": "short",
-   "entry": 69.33,
-   "sl": 72.87688,
-   "tp1": 67.18,
-   "tp2": 65,
-   "time": "2026-11-06T09:13:21.212Z",
-   "status": "open"
-  },
-  {
    "symbol": "BMNRBUSDT",
    "dir": "short",
    "entry": 19.1,
