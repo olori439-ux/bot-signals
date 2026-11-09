@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "SIGNUSDT",
-   "dir": "short",
-   "entry": 0.0093,
-   "sl": 0.010194388,
-   "tp1": 0.0087037416,
-   "tp2": 0.007809354,
-   "time": "2026-11-07T21:00:36.080Z",
-   "status": "open"
-  },
-  {
    "symbol": "TRUMPUSDT",
    "dir": "short",
    "entry": 1.189,
