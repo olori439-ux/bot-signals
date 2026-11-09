@@ -192,16 +192,6 @@
    "status": "open"
   },
   {
-   "symbol": "POLUSDT",
-   "dir": "short",
-   "entry": 0.08782,
-   "sl": 0.090171593,
-   "tp1": 0.086252272,
-   "tp2": 0.083900679,
-   "time": "2026-11-08T23:00:35.426Z",
-   "status": "open"
-  },
-  {
    "symbol": "MITOUSDT",
    "dir": "short",
    "entry": 0.00772,
