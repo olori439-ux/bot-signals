@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "INTWBUSDT",
-   "dir": "short",
-   "entry": 5.24,
-   "sl": 5.7988546,
-   "tp1": 4.69,
-   "tp2": 4.3,
-   "time": "2026-11-06T12:10:20.716Z",
-   "status": "open"
-  },
-  {
    "symbol": "SIGNUSDT",
    "dir": "short",
    "entry": 0.0093,
