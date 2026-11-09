@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "AAOIBUSDT",
-   "dir": "short",
-   "entry": 45.42,
-   "sl": 53.42277,
-   "tp1": 40.08482,
-   "tp2": 32.08205,
-   "time": "2026-11-06T01:53:24.176Z",
-   "status": "open"
-  },
-  {
    "symbol": "MSTRBUSDT",
    "dir": "short",
    "entry": 131.24,
