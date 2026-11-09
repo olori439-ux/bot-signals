@@ -272,16 +272,6 @@
    "status": "pending"
   },
   {
-   "symbol": "PEPEUSDT",
-   "dir": "long",
-   "entry": 4.94e-06,
-   "sl": 4.6628784e-06,
-   "tp1": 5.05e-06,
-   "tp2": 5.15e-06,
-   "time": "2026-11-09T00:05:35.804Z",
-   "status": "open"
-  },
-  {
    "symbol": "RAYUSDT",
    "dir": "short",
    "entry": 1.72,
