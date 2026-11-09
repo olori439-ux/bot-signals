@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:50:37.941Z",
+ "updated": "2026-11-09T01:00:35.720Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -182,16 +182,6 @@
    "status": "open"
   },
   {
-   "symbol": "TIAUSDT",
-   "dir": "short",
-   "entry": 0.4425,
-   "sl": 0.45821294,
-   "tp1": 0.4351,
-   "tp2": 0.4152,
-   "time": "2026-11-08T01:00:42.712Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ADAUSDT",
    "dir": "short",
    "entry": 0.182,
@@ -272,16 +262,6 @@
    "status": "pending"
   },
   {
-   "symbol": "GOOGLBUSDT",
-   "dir": "short",
-   "entry": 282.1,
-   "sl": 285.48248,
-   "tp1": 278.02,
-   "tp2": 276.46253,
-   "time": "2026-11-08T22:18:35.013Z",
-   "status": "open"
-  },
-  {
    "symbol": "ZENUSDT",
    "dir": "short",
    "entry": 4.842,
@@ -359,6 +339,26 @@
    "tp1": 128.29,
    "tp2": 126.54,
    "time": "2026-11-09T00:50:37.941Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ZROUSDT",
+   "dir": "short",
+   "entry": 1.604,
+   "sl": 1.6791895,
+   "tp1": 1.577,
+   "tp2": 1.4786841,
+   "time": "2026-11-09T01:00:35.720Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ICPUSDT",
+   "dir": "short",
+   "entry": 2.402,
+   "sl": 2.4828218,
+   "tp1": 2.373,
+   "tp2": 2.267297,
+   "time": "2026-11-09T01:00:35.720Z",
    "status": "pending"
   }
  ]
