@@ -62,16 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "TRUMPUSDT",
-   "dir": "short",
-   "entry": 1.189,
-   "sl": 1.2301115,
-   "tp1": 1.171,
-   "tp2": 1.155,
-   "time": "2026-11-08T17:00:34.322Z",
-   "status": "pending"
-  },
-  {
    "symbol": "BCHUSDT",
    "dir": "short",
    "entry": 249.5,
