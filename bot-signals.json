@@ -392,16 +392,6 @@
    "status": "pending"
   },
   {
-   "symbol": "NXPCUSDT",
-   "dir": "short",
-   "entry": 0.1417,
-   "sl": 0.15701854,
-   "tp1": 0.13148764,
-   "tp2": 0.1161691,
-   "time": "2026-11-09T07:32:43.046Z",
-   "status": "open"
-  },
-  {
    "symbol": "ETHFIUSDT",
    "dir": "short",
    "entry": 0.585,
