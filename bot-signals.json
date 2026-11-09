@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T10:33:32.520Z",
+ "updated": "2026-11-09T10:42:36.737Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -439,6 +439,16 @@
    "tp1": 0.03665,
    "tp2": 0.03593,
    "time": "2026-11-09T10:33:32.520Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "CELOUSDT",
+   "dir": "short",
+   "entry": 0.06488,
+   "sl": 0.06738313,
+   "tp1": 0.06383,
+   "tp2": 0.06007,
+   "time": "2026-11-09T10:42:36.737Z",
    "status": "pending"
   }
  ]
