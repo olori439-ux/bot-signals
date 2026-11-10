@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "MSTRBUSDT",
-   "dir": "short",
-   "entry": 131.24,
-   "sl": 138.45803,
-   "tp1": 124.14,
-   "tp2": 119.20994,
-   "time": "2026-11-06T03:18:20.705Z",
-   "status": "open"
-  },
-  {
    "symbol": "BNCBUSDT",
    "dir": "short",
    "entry": 4.83,
