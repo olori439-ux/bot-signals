@@ -132,16 +132,6 @@
    "status": "open"
   },
   {
-   "symbol": "ZROUSDT",
-   "dir": "short",
-   "entry": 1.618,
-   "sl": 1.6971721,
-   "tp1": 1.577,
-   "tp2": 1.4860466,
-   "time": "2026-11-09T02:07:36.170Z",
-   "status": "pending"
-  },
-  {
    "symbol": "WBETHUSDT",
    "dir": "short",
    "entry": 2394.58,
