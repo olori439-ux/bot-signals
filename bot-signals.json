@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T19:58:58.618Z",
+ "updated": "2026-11-10T00:58:43.836Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -249,6 +249,16 @@
    "tp1": 1.123,
    "tp2": 1.0452587,
    "time": "2026-11-09T19:58:58.618Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "GTCUSDT",
+   "dir": "short",
+   "entry": 0.17276,
+   "sl": 0.18550251,
+   "tp1": 0.1676,
+   "tp2": 0.16042,
+   "time": "2026-11-10T00:58:43.836Z",
    "status": "pending"
   }
  ]
