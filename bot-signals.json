@@ -82,16 +82,6 @@
    "status": "open"
   },
   {
-   "symbol": "MITOUSDT",
-   "dir": "short",
-   "entry": 0.00772,
-   "sl": 0.0086345973,
-   "tp1": 0.00687,
-   "tp2": 0.00652,
-   "time": "2026-11-09T00:00:34.381Z",
-   "status": "pending"
-  },
-  {
    "symbol": "AAVEUSDT",
    "dir": "short",
    "entry": 131.54,
