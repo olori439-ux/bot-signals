@@ -72,16 +72,6 @@
    "status": "open"
   },
   {
-   "symbol": "ICPUSDT",
-   "dir": "short",
-   "entry": 2.402,
-   "sl": 2.4828218,
-   "tp1": 2.373,
-   "tp2": 2.267297,
-   "time": "2026-11-09T01:00:35.720Z",
-   "status": "open"
-  },
-  {
    "symbol": "SUIUSDT",
    "dir": "short",
    "entry": 0.854,
