@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T05:07:35.930Z",
+ "updated": "2026-11-10T07:59:42.991Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -259,6 +259,16 @@
    "tp1": 0.000478,
    "tp2": 0.000526,
    "time": "2026-11-10T05:07:35.930Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "PROMUSDT",
+   "dir": "short",
+   "entry": 5.23,
+   "sl": 5.9332163,
+   "tp1": 4.335,
+   "tp2": 4.0579728,
+   "time": "2026-11-10T07:59:42.991Z",
    "status": "pending"
   }
  ]
