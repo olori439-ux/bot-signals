@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "NIGHTUSDT",
-   "dir": "short",
-   "entry": 0.04024,
-   "sl": 0.042609998,
-   "tp1": 0.0393,
-   "tp2": 0.03845,
-   "time": "2026-11-09T09:25:31.977Z",
-   "status": "open"
-  },
-  {
    "symbol": "STRKUSDT",
    "dir": "short",
    "entry": 0.03881,
