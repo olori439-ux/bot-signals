@@ -192,16 +192,6 @@
    "status": "open"
   },
   {
-   "symbol": "XAUTUSDT",
-   "dir": "long",
-   "entry": 4112.37,
-   "sl": 4072.1111,
-   "tp1": 4139.2092,
-   "tp2": 4179.4681,
-   "time": "2026-11-09T19:52:58.982Z",
-   "status": "open"
-  },
-  {
    "symbol": "TRUMPUSDT",
    "dir": "short",
    "entry": 1.148,
