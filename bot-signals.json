@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T14:47:33.400Z",
+ "updated": "2026-11-10T16:00:45.733Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -240,6 +240,26 @@
    "tp2": 0.05501,
    "time": "2026-11-10T14:47:33.400Z",
    "status": "open"
+  },
+  {
+   "symbol": "ENAUSDT",
+   "dir": "short",
+   "entry": 0.154,
+   "sl": 0.16297692,
+   "tp1": 0.1494,
+   "tp2": 0.1461,
+   "time": "2026-11-10T16:00:45.733Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ZROUSDT",
+   "dir": "short",
+   "entry": 1.521,
+   "sl": 1.607575,
+   "tp1": 1.47,
+   "tp2": 1.3767084,
+   "time": "2026-11-10T16:00:45.733Z",
+   "status": "pending"
   }
  ]
 }
