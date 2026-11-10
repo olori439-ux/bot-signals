@@ -192,16 +192,6 @@
    "status": "pending"
   },
   {
-   "symbol": "牛来USDT",
-   "dir": "short",
-   "entry": 0.0577,
-   "sl": 0.061239182,
-   "tp1": 0.05626,
-   "tp2": 0.05383,
-   "time": "2026-11-10T02:50:35.044Z",
-   "status": "open"
-  },
-  {
    "symbol": "RAYUSDT",
    "dir": "short",
    "entry": 1.7186,
