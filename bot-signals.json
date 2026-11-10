@@ -142,16 +142,6 @@
    "status": "open"
   },
   {
-   "symbol": "QNTUSDT",
-   "dir": "short",
-   "entry": 195.6,
-   "sl": 205.20243,
-   "tp1": 192,
-   "tp2": 187.5,
-   "time": "2026-11-09T08:05:45.653Z",
-   "status": "open"
-  },
-  {
    "symbol": "STRKUSDT",
    "dir": "short",
    "entry": 0.03881,
