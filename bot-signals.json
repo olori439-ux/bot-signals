@@ -212,16 +212,6 @@
    "status": "open"
   },
   {
-   "symbol": "牛来USDT",
-   "dir": "short",
-   "entry": 0.05827,
-   "sl": 0.061782769,
-   "tp1": 0.05635,
-   "tp2": 0.05501,
-   "time": "2026-11-10T14:47:33.400Z",
-   "status": "open"
-  },
-  {
    "symbol": "ENAUSDT",
    "dir": "short",
    "entry": 0.154,
