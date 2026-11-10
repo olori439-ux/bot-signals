@@ -132,16 +132,6 @@
    "status": "open"
   },
   {
-   "symbol": "HOTUSDT",
-   "dir": "long",
-   "entry": 0.00041,
-   "sl": 0.00034161755,
-   "tp1": 0.000526,
-   "tp2": 0.00052397076,
-   "time": "2026-11-09T05:00:35.135Z",
-   "status": "pending"
-  },
-  {
    "symbol": "RENDERUSDT",
    "dir": "short",
    "entry": 1.561,
