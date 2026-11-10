@@ -212,16 +212,6 @@
    "status": "pending"
   },
   {
-   "symbol": "PAXGUSDT",
-   "dir": "long",
-   "entry": 4089.37,
-   "sl": 4050.9027,
-   "tp1": 4118.59,
-   "tp2": 4133.99,
-   "time": "2026-11-10T04:56:34.535Z",
-   "status": "open"
-  },
-  {
    "symbol": "HOTUSDT",
    "dir": "long",
    "entry": 0.000416,
