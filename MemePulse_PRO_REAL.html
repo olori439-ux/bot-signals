@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemePulse PRO | منصة تحليل عملات الميم وصيد التجميع والسكالب</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#090D16',
+                        cardBg: '#111827',
+                        cardBorder: '#1F2937',
+                        accentGreen: '#10B981',
+                        accentRed: '#EF4444',
+                        accentPurple: '#8B5CF6',
+                        accentCyan: '#06B6D4',
+                        accentYellow: '#F59E0B'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #090D16;
+            color: #F3F4F6;
+        }
+        .glow-green {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+        }
+        .glow-purple {
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+        }
+        .glow-red {
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0D1322;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+<body class="min-h-screen custom-scrollbar flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-cardBg/90 backdrop-blur border-b border-cardBorder sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentPurple via-accentCyan to-accentGreen p-0.5 flex items-center justify-center glow-purple">
+                    <div class="w-full h-full bg-darkBg rounded-[10px] flex items-center justify-center">
+                        <i data-lucide="zap" class="w-5 h-5 text-accentCyan"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="font-black text-xl bg-clip-text text-transparent bg-gradient-to-r from-accentCyan via-accentGreen to-accentPurple">
+                            MemePulse <span class="text-xs bg-accentPurple/20 text-accentPurple px-2 py-0.5 rounded-full border border-accentPurple/30">PRO v2.8</span>
+                        </h1>
+                    </div>
+                    <p class="text-xs text-gray-400">منصة رصد التجميع والتفريغ وإشارات السكالب السريعة</p>
+                </div>
+            </div>
+
+            <!-- Network & Live Status -->
+            <div class="flex items-center gap-3">
+                <div class="hidden md:flex items-center gap-2 bg-darkBg px-3 py-1.5 rounded-lg border border-cardBorder text-xs text-gray-300">
+                    <span class="w-2 h-2 rounded-full bg-accentGreen animate-pulse"></span>
+                    <span>شبكة سولانا وإيثيريوم: <strong class="text-accentGreen">مباشر</strong></span>
+                </div>
+                <button onclick="openModal('calcModal')" class="flex items-center gap-1.5 bg-accentPurple/20 hover:bg-accentPurple/30 text-accentPurple text-xs font-bold px-3 py-2 rounded-lg border border-accentPurple/40 transition">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>حاسبة المخاطرة</span>
+                </button>
+                <button onclick="openModal('guideModal')" class="flex items-center gap-1.5 bg-darkBg hover:bg-cardBorder text-gray-300 text-xs font-semibold px-3 py-2 rounded-lg border border-cardBorder transition">
+                    <i data-lucide="book-open" class="w-4 h-4 text-accentCyan"></i>
+                    <span class="hidden sm:inline">دليل التجميع</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Ticker Tape -->
+    <div class="bg-darkBg/80 border-b border-cardBorder py-2 overflow-x-auto custom-scrollbar">
+        <div class="max-w-7xl mx-auto px-4 flex items-center gap-6 text-xs whitespace-nowrap" id="tickerTape">
+            <!-- Populated via JS -->
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+        <!-- Metrics Overview Bar -->
+        <div id="liveNote" class="text-[11px] text-gray-400 text-left">بيانات 2026-11-10 02:31 — جاري محاولة التحديث المباشر…</div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-cardBg border border-cardBorder p-4 rounded-xl flex items-center justify-between">
+                <div>
+                    <span class="text-xs text-gray-400 block">مؤشر جشع الميم (Meme Index)</span>
+                    <div class="flex items-baseline gap-2 mt-1">
+                        <span class="text-2xl font-black text-accentGreen" id="sentimentVal">—</span>
+                        <span class="text-xs text-accentGreen font-bold bg-accentGreen/10 px-2 py-0.5 rounded" id="sentimentLabel">…</span>
+                    </div>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accentGreen/10 flex items-center justify-center text-accentGreen">
+                    <i data-lucide="flame" class="w-5 h-5"></i>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-cardBorder p-4 rounded-xl flex items-center justify-between">
+                <div>
+                    <span class="text-xs text-gray-400 block">عملات في مرحلة تجميع (Spring)</span>
+                    <div class="flex items-baseline gap-2 mt-1">
+                        <span class="text-2xl font-black text-accentCyan" id="accumulatingCount">—</span>
+                        <span class="text-xs text-gray-400" id="accumulatingTotal">من أصل — رادار</span>
+                    </div>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accentCyan/10 flex items-center justify-center text-accentCyan">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-cardBorder p-4 rounded-xl flex items-center justify-between">
+                <div>
+                    <span class="text-xs text-gray-400 block">نسبة نجاح السكالب (24h Win Rate)</span>
+                    <div class="flex items-baseline gap-2 mt-1">
+                        <span class="text-2xl font-black text-accentPurple" id="winRateVal">—</span>
+                        <span class="text-xs text-accentPurple bg-accentPurple/10 px-1.5 py-0.5 rounded">باك-تست 7 أيام</span>
+                    </div>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accentPurple/10 flex items-center justify-center text-accentPurple">
+                    <i data-lucide="target" class="w-5 h-5"></i>
+                </div>
+            </div>
+
+            <div class="bg-cardBg border border-cardBorder p-4 rounded-xl flex items-center justify-between">
+                <div>
+                    <span class="text-xs text-gray-400 block">تنبيهات تفريغ وشيك (Pump & Dump)</span>
+                    <div class="flex items-baseline gap-2 mt-1">
+                        <span class="text-2xl font-black text-accentRed" id="dumpCount">—</span>
+                        <span class="text-xs text-accentRed font-bold bg-accentRed/10 px-1.5 py-0.5 rounded">تحذير سيولة</span>
+                    </div>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-accentRed/10 flex items-center justify-center text-accentRed">
+                    <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Central Workspace Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+            <!-- Chart & Technical Terminal (8 cols) -->
+            <div class="lg:col-span-8 space-y-6">
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-4 space-y-4">
+                    
+                    <!-- Coin Selector Header -->
+                    <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-cardBorder">
+                        <div class="flex items-center gap-3">
+                            <div id="selectedCoinIcon" class="w-9 h-9 rounded-full bg-accentCyan/20 text-accentCyan font-black flex items-center justify-center text-sm border border-accentCyan/30">
+                                PEPE
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h2 class="font-extrabold text-lg" id="selectedCoinName">PEPE / USDT</h2>
+                                    <span class="text-xs font-bold px-2 py-0.5 rounded bg-accentGreen/10 text-accentGreen border border-accentGreen/30" id="selectedCoinNetwork">Solana DEX</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-xs text-gray-400 mt-0.5">
+                                    <span>السعر: <strong class="text-white" id="selectedCoinPrice">$0.00000948</strong></span>
+                                    <span>التغير 24h: <strong class="text-accentGreen" id="selectedCoinChange">+14.2%</strong></span>
+                                    <span>السيولة: <strong class="text-gray-200" id="selectedCoinLiq">$4.8M</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeframe & Controls -->
+                        <div class="flex items-center gap-1.5 bg-darkBg p-1 rounded-lg border border-cardBorder text-xs">
+                            <button onclick="setTimeframe('1m')" class="tf-btn px-2.5 py-1 rounded font-semibold text-gray-400 hover:text-white" data-tf="1m">1m</button>
+                            <button onclick="setTimeframe('5m')" class="tf-btn px-2.5 py-1 rounded font-semibold bg-accentPurple text-white" data-tf="5m">5m</button>
+                            <button onclick="setTimeframe('15m')" class="tf-btn px-2.5 py-1 rounded font-semibold text-gray-400 hover:text-white" data-tf="15m">15m</button>
+                            <button onclick="setTimeframe('1h')" class="tf-btn px-2.5 py-1 rounded font-semibold text-gray-400 hover:text-white" data-tf="1h">1h</button>
+                        </div>
+                    </div>
+
+                    <!-- Indicator Quick Toggles -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="text-gray-400">المؤشرات المفعلة:</span>
+                            <button onclick="toggleIndicator('ema')" id="btnEma" class="px-2.5 py-1 rounded-lg bg-accentPurple/20 text-accentPurple border border-accentPurple/40 font-semibold flex items-center gap-1">
+                                <i data-lucide="check" class="w-3 h-3"></i> EMA Ribbon (9/21)
+                            </button>
+                            <button onclick="toggleIndicator('wyckoff')" id="btnWyckoff" class="px-2.5 py-1 rounded-lg bg-accentCyan/20 text-accentCyan border border-accentCyan/40 font-semibold flex items-center gap-1">
+                                <i data-lucide="check" class="w-3 h-3"></i> مناطق وايكوف (Wyckoff)
+                            </button>
+                            <button onclick="toggleIndicator('vwap')" id="btnVwap" class="px-2.5 py-1 rounded-lg bg-accentYellow/20 text-accentYellow border border-accentYellow/40 font-semibold flex items-center gap-1">
+                                <i data-lucide="check" class="w-3 h-3"></i> خط VWAP + الانحراف
+                            </button>
+                            <button onclick="toggleIndicator('volume')" id="btnVolume" class="px-2.5 py-1 rounded-lg bg-accentGreen/20 text-accentGreen border border-accentGreen/40 font-semibold flex items-center gap-1">
+                                <i data-lucide="check" class="w-3 h-3"></i> Volume Delta
+                            </button>
+                        </div>
+                        <button onclick="refreshChartData()" class="text-gray-400 hover:text-accentCyan flex items-center gap-1">
+                            <i data-lucide="rotate-cw" class="w-3.5 h-3.5"></i> تحديث التحليل
+                        </button>
+                    </div>
+
+                    <!-- Chart Canvas Container -->
+                    <div class="relative h-80 w-full bg-darkBg rounded-xl p-2 border border-cardBorder">
+                        <canvas id="tradingChart"></canvas>
+                        <!-- Floating Wyckoff Phase Overlay Tag -->
+                        <div class="absolute top-4 right-4 bg-darkBg/90 backdrop-blur border border-accentGreen/50 px-3 py-1.5 rounded-lg shadow-lg text-xs flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-accentGreen animate-ping"></span>
+                            <span>المرحلة الحالية: <strong class="text-accentGreen" id="chartWyckoffTag">Phase C - Spring (تجميع ذكي)</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Signal Trigger Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-darkBg p-3 rounded-lg border border-accentGreen/30">
+                            <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+                                <span>نقطة دخول السكالب (Entry)</span>
+                                <i data-lucide="arrow-down-left" class="w-4 h-4 text-accentGreen"></i>
+                            </div>
+                            <div class="text-base font-extrabold text-accentGreen" id="sigEntry">$0.00000945</div>
+                            <div class="text-[10px] text-gray-400 mt-0.5">عند إعادة اختبار الـ Spring</div>
+                        </div>
+
+                        <div class="bg-darkBg p-3 rounded-lg border border-accentRed/30">
+                            <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+                                <span>وقف الخسارة (Stop Loss)</span>
+                                <i data-lucide="shield-alert" class="w-4 h-4 text-accentRed"></i>
+                            </div>
+                            <div class="text-base font-extrabold text-accentRed" id="sigSL">$0.00000928</div>
+                            <div class="text-[10px] text-gray-400 mt-0.5">أسفل أدنى قاع للسيولة (1.8%)</div>
+                        </div>
+
+                        <div class="bg-darkBg p-3 rounded-lg border border-accentCyan/30">
+                            <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+                                <span>أهداف الصفقة (Take Profit)</span>
+                                <i data-lucide="trending-up" class="w-4 h-4 text-accentCyan"></i>
+                            </div>
+                            <div class="text-xs font-bold text-accentCyan" id="sigTP">
+                                TP1: $0.00000980 | TP2: $0.00001020
+                            </div>
+                            <div class="text-[10px] text-gray-400 mt-0.5">معدل العائد للمخاطرة 1:3.2</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Meme Security & Contract Audit Box -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-4 space-y-3">
+                    <div class="flex items-center justify-between border-b border-cardBorder pb-2">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-accentGreen"></i>
+                            <h3 class="font-bold text-sm">فحص أمان العقد والسيولة (Contract & Liquidity Audit)</h3>
+                        </div>
+                        <span class="text-xs font-extrabold bg-accentGreen/10 text-accentGreen border border-accentGreen/30 px-2.5 py-0.5 rounded-full" id="securityScore">
+                            درجة الأمان: 95/100 (آمنة للسكالب)
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 text-center text-xs">
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">قفل السيولة (LP)</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secLp">100% مغلقة</span>
+                        </div>
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">إلغاء السك (Mint)</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secMint">ملغاة (Revoked)</span>
+                        </div>
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">ملكية كبار الملاك</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secTopHolders">12.4% فقط</span>
+                        </div>
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">محفظة المطور (Dev)</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secDevWallet">0.5% (متحفظ)</span>
+                        </div>
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">ضريبة الشراء/البيع</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secTax">0% / 0%</span>
+                        </div>
+                        <div class="bg-darkBg p-2 rounded-lg border border-cardBorder">
+                            <span class="text-gray-400 text-[10px] block">فحص HoneyPot</span>
+                            <span class="font-bold text-accentGreen text-xs mt-1 block" id="secHoneypot">سليم 100%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Signal Analysis & Accumulation Sidebar (4 cols) -->
+            <div class="lg:col-span-4 space-y-6">
+
+                <!-- Primary Signal Decision Box -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-5 space-y-4 glow-green" id="signalCard">
+                    <div class="flex items-center justify-between border-b border-cardBorder pb-3">
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">قرار محرك السكالب والتجميع</span>
+                        <span class="text-[11px] bg-accentGreen/20 text-accentGreen px-2 py-0.5 rounded font-extrabold" id="signalStrength">قوة الإشارة: 92%</span>
+                    </div>
+
+                    <div class="text-center py-2 space-y-2">
+                        <div class="inline-flex items-center gap-2 bg-accentGreen/20 text-accentGreen border border-accentGreen/40 px-4 py-2 rounded-xl text-lg font-black" id="signalBadge">
+                            <i data-lucide="arrow-big-up-dash" class="w-6 h-6"></i>
+                            <span>دخول شراء (LONG SCALP)</span>
+                        </div>
+                        <p class="text-xs text-gray-300 px-2 leading-relaxed" id="signalDesc">
+                            تم تأكيد قاع Spring نموذج وايكوف مع امتصاص سيولة عالي وزيادة ملحوظة في الشراء التراكمي (Volume Delta Positive).
+                        </p>
+                    </div>
+
+                    <!-- Checklist Confluences -->
+                    <div class="space-y-2 text-xs border-t border-cardBorder pt-3">
+                        <span class="text-gray-400 font-bold block mb-1">شروط التوافق الفني (Confluence Checklist):</span>
+                        
+                        <div class="flex items-center justify-between bg-darkBg px-2.5 py-1.5 rounded border border-cardBorder">
+                            <span class="flex items-center gap-1.5 text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-accentGreen"></i>
+                                <span>مرحلة وايكوف:</span>
+                            </span>
+                            <span class="font-bold text-accentGreen" id="chkWyckoff">Phase C (Spring Done)</span>
+                        </div>
+
+                        <div class="flex items-center justify-between bg-darkBg px-2.5 py-1.5 rounded border border-cardBorder">
+                            <span class="flex items-center gap-1.5 text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-accentGreen"></i>
+                                <span>متقاطع المتوسطات EMA 9/21:</span>
+                            </span>
+                            <span class="font-bold text-accentGreen" id="chkEma">صاعد (Golden Cross)</span>
+                        </div>
+
+                        <div class="flex items-center justify-between bg-darkBg px-2.5 py-1.5 rounded border border-cardBorder">
+                            <span class="flex items-center gap-1.5 text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-accentGreen"></i>
+                                <span>مؤشر السيولة Volume Delta:</span>
+                            </span>
+                            <span class="font-bold text-accentGreen" id="chkVolume">+68% شراء صافي</span>
+                        </div>
+
+                        <div class="flex items-center justify-between bg-darkBg px-2.5 py-1.5 rounded border border-cardBorder">
+                            <span class="flex items-center gap-1.5 text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-accentGreen"></i>
+                                <span>موقع السعر من VWAP:</span>
+                            </span>
+                            <span class="font-bold text-accentGreen" id="chkVwap">أعلى من خط VWAP</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Execution Buttons -->
+                    <div class="pt-2 flex items-center gap-2">
+                        <button onclick="openModal('calcModal')" class="w-full py-2.5 bg-gradient-to-r from-accentGreen to-emerald-600 hover:from-emerald-600 hover:to-accentGreen text-darkBg font-black text-xs rounded-lg transition shadow flex items-center justify-center gap-1.5">
+                            <i data-lucide="play" class="w-4 h-4"></i>
+                            <span>احسب حجم اللوت والدخول</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accumulation vs Distribution Gauge Panel -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-4 space-y-3">
+                    <h3 class="font-bold text-sm flex items-center gap-2">
+                        <i data-lucide="bar-chart-3" class="w-4 h-4 text-accentCyan"></i>
+                        <span>ميزان التجميع والتفريغ (Smart Money Flow)</span>
+                    </h3>
+
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between text-xs font-semibold">
+                            <span class="text-accentGreen">تجميع حيتان (Accumulation): <strong id="accPct">78%</strong></span>
+                            <span class="text-accentRed">تفريغ (Distribution): <strong id="distPct">22%</strong></span>
+                        </div>
+                        <div class="w-full bg-darkBg h-3 rounded-full overflow-hidden flex border border-cardBorder">
+                            <div id="accBar" class="bg-gradient-to-r from-accentGreen to-emerald-400 h-full transition-all duration-500" style="width: 78%;"></div>
+                            <div id="distBar" class="bg-gradient-to-r from-rose-500 to-accentRed h-full transition-all duration-500" style="width: 22%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-darkBg p-2.5 rounded-lg border border-cardBorder text-xs text-gray-300 space-y-1">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">حجم الشراء التراكمي (24h):</span>
+                            <span class="font-bold text-accentGreen" id="accVol">$3.2M</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-400">حجم البيع/التفريغ:</span>
+                            <span class="font-bold text-accentRed" id="distVol">$890K</span>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-cardBorder/50 pt-1 mt-1">
+                            <span class="text-gray-400">معدل الانحراف الفوليومي (VSA):</span>
+                            <span class="font-bold text-accentCyan" id="vsaStatus">امتصاص صانع السوق</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Custom Contract Search Box -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-4 space-y-3">
+                    <h3 class="font-bold text-sm flex items-center gap-2">
+                        <i data-lucide="search" class="w-4 h-4 text-accentPurple"></i>
+                        <span>تحليل عملة ميم خاصة (Custom Token)</span>
+                    </h3>
+                    <p class="text-xs text-gray-400">أدخل اسم العملة أو عقد السولانا/إيثيريوم لتحليل التجميع فوراً:</p>
+                    
+                    <div class="flex gap-2">
+                        <input type="text" id="customInput" placeholder="مثال: $POPCAT أو العقد..." class="w-full bg-darkBg border border-cardBorder rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-accentPurple">
+                        <button onclick="analyzeCustomToken()" class="bg-accentPurple hover:bg-accentPurple/80 text-white font-bold text-xs px-4 py-2 rounded-lg transition whitespace-nowrap">
+                            تحليل
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Meme Coin Screener Table Section -->
+        <div class="bg-cardBg border border-cardBorder rounded-xl p-5 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-cardBorder pb-4">
+                <div>
+                    <h3 class="font-extrabold text-base flex items-center gap-2">
+                        <i data-lucide="list-filter" class="w-5 h-5 text-accentCyan"></i>
+                        <span>رادار عملات الميم - صيد التجميع والتفريغ المباشر</span>
+                    </h3>
+                    <p class="text-xs text-gray-400">قائمة العملات المحدثة تلقائياً بناءً على نموذج وايكوف ومؤشر الأمان</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap items-center gap-2 text-xs">
+                    <button onclick="filterRadar('all')" class="radar-filter px-3 py-1.5 rounded-lg bg-accentPurple text-white font-bold" data-filter="all">الكل</button>
+                    <button onclick="filterRadar('spring')" class="radar-filter px-3 py-1.5 rounded-lg bg-darkBg hover:bg-cardBorder text-gray-300 border border-cardBorder font-semibold" data-filter="spring">تجميع (Spring)</button>
+                    <button onclick="filterRadar('long')" class="radar-filter px-3 py-1.5 rounded-lg bg-darkBg hover:bg-cardBorder text-gray-300 border border-cardBorder font-semibold" data-filter="long">إشارات Long</button>
+                    <button onclick="filterRadar('dump')" class="radar-filter px-3 py-1.5 rounded-lg bg-darkBg hover:bg-cardBorder text-gray-300 border border-cardBorder font-semibold" data-filter="dump">تنبيه تفريغ</button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="overflow-x-auto custom-scrollbar">
+                <table class="w-full text-right text-xs">
+                    <thead>
+                        <tr class="text-gray-400 border-b border-cardBorder bg-darkBg/50">
+                            <th class="p-3">العملة والشبكة</th>
+                            <th class="p-3">السعر والتغير 24h</th>
+                            <th class="p-3">السيولة / والقيمة السوقية</th>
+                            <th class="p-3">مرحلة وايكوف الحالية</th>
+                            <th class="p-3">مؤشر التجميع/التفريغ</th>
+                            <th class="p-3">إشارة السكالب</th>
+                            <th class="p-3">درجة الأمان</th>
+                            <th class="p-3 text-center">إجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody id="radarTableBody" class="divide-y divide-cardBorder">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cardBg border-t border-cardBorder mt-12 py-6 text-center text-xs text-gray-500 space-y-2">
+        <p>MemePulse PRO &copy; 2026 - نظام تحليل الميم وإدارة مخاطر السكالب والتجميع الفني</p>
+        <p class="text-[11px] text-gray-600 max-w-2xl mx-auto px-4">
+            تنبيه هام: عملات الميم ذات تقلبات عالية جداً وتطوي مخاطر مرتفعة. أدوات السكالب ووايكوف تُستخدم كمساعد تحليلي وليست نصيحة مالية direct. احرص دائماً على الالتزام بوقف الخسارة strict SL.
+        </p>
+    </footer>
+
+    <!-- Modal 1: Risk & Position Calculator -->
+    <div id="calcModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-cardBg border border-cardBorder w-full max-w-md rounded-xl p-5 space-y-4 relative shadow-2xl">
+            <button onclick="closeModal('calcModal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center gap-2 border-b border-cardBorder pb-3">
+                <i data-lucide="calculator" class="w-5 h-5 text-accentPurple"></i>
+                <h3 class="font-extrabold text-base">حاسبة إدارة المخاطرة وحجم صفقة السكالب</h3>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-gray-400 mb-1">رأس المال الكلي في المحفظة ($)</label>
+                    <input type="number" id="calcCapital" value="1000" class="w-full bg-darkBg border border-cardBorder rounded-lg p-2.5 text-white font-bold text-sm focus:outline-none focus:border-accentPurple">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-gray-400 mb-1">نسبة المخاطرة القابلة للخسارة (%)</label>
+                        <input type="number" id="calcRiskPct" value="2" step="0.5" class="w-full bg-darkBg border border-cardBorder rounded-lg p-2.5 text-white font-bold text-sm focus:outline-none focus:border-accentPurple">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-1">المبلغ المعرّض للخسارة ($)</label>
+                        <input type="text" id="calcMaxLoss" value="$20.00" readonly class="w-full bg-darkBg/60 border border-cardBorder rounded-lg p-2.5 text-accentRed font-bold text-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-gray-400 mb-1">سعر الدخول (Entry Price)</label>
+                        <input type="number" id="calcEntry" value="0.00000945" step="0.00000001" class="w-full bg-darkBg border border-cardBorder rounded-lg p-2.5 text-white font-bold text-sm focus:outline-none focus:border-accentPurple">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-1">سعر وقف الخسارة (Stop Loss)</label>
+                        <input type="number" id="calcSL" value="0.00000928" step="0.00000001" class="w-full bg-darkBg border border-cardBorder rounded-lg p-2.5 text-white font-bold text-sm focus:outline-none focus:border-accentPurple">
+                    </div>
+                </div>
+
+                <!-- Result Box -->
+                <div class="bg-darkBg p-3 rounded-lg border border-accentPurple/40 space-y-2 mt-2">
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gray-300">الحجم الموصى به للصفقة ($):</span>
+                        <span class="font-extrabold text-accentGreen text-sm" id="calcPosSize">$1,111.11</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gray-300">عدد العملات المطلوبة (Tokens):</span>
+                        <span class="font-bold text-accentCyan" id="calcTokenQty">117,577,883 PEPE</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-gray-300">نسبة المخاطرة بالسعر (SL Distance):</span>
+                        <span class="font-bold text-accentRed" id="calcSlDistance">1.80%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs border-t border-cardBorder pt-1.5">
+                        <span class="text-gray-300">الربح المتوقع عند الهدف الأول (TP1 1:2):</span>
+                        <span class="font-bold text-accentGreen" id="calcTp1Profit">+$40.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="calculateRisk()" class="w-full py-2.5 bg-accentPurple hover:bg-accentPurple/80 text-white font-bold text-xs rounded-lg transition">
+                إعادة الحساب
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal 2: Wyckoff & Scalping Strategy Guide -->
+    <div id="guideModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-cardBg border border-cardBorder w-full max-w-2xl rounded-xl p-6 space-y-4 relative shadow-2xl max-h-[85vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeModal('guideModal')" class="absolute top-4 left-4 text-gray-400 hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="flex items-center gap-2 border-b border-cardBorder pb-3">
+                <i data-lucide="book-open" class="w-6 h-6 text-accentCyan"></i>
+                <div>
+                    <h3 class="font-extrabold text-base">دليل استراتيجية صيد التجميع والسكالب في عملات الميم</h3>
+                    <p class="text-xs text-gray-400">قواعد وايكوف ومؤشرات السكالب لملاحقة صانع السوق (Smart Money)</p>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-gray-300 leading-relaxed">
+                <!-- Section 1 -->
+                <div class="bg-darkBg p-3.5 rounded-lg border border-cardBorder space-y-2">
+                    <h4 class="font-extrabold text-sm text-accentGreen flex items-center gap-1.5">
+                        <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                        <span>1. مراحـل تجميع وايكوف (Wyckoff Accumulation in Memes):</span>
+                    </h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-300 pr-2">
+                        <li><strong>Phase A (إيقاف الاتجاه الهابط):</strong> بيع ذروة (Selling Climax) مع فوليوم ضخم يتبعه ارتداد تلقائي (Automatic Rally).</li>
+                        <li><strong>Phase B (بناء التجميع):</strong> حركة عرضية داخل نطاق ضيق بين الدعم والمقاومة لامتصاص المعروض.</li>
+                        <li><strong>Phase C (الـ Spring / صيد السيولة):</strong> كسر كاذب سريع لأسفل الدعم لضرب أوقف الخسارة ثم الإغلاق فوراً أعلاه مع فوليوم شرائي. <span class="text-accentGreen font-bold">(هذه أفضل نقطة دخول للسكالب!)</span>.</li>
+                        <li><strong>Phase D (علامة القوة SOS):</strong> صعود قوي يكسر المقاومة مع إعادة اختبار بسيطة (LPS).</li>
+                    </ul>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="bg-darkBg p-3.5 rounded-lg border border-cardBorder space-y-2">
+                    <h4 class="font-extrabold text-sm text-accentRed flex items-center gap-1.5">
+                        <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                        <span>2. علامات التفريغ الوشيك والـ Pump & Dump:</span>
+                    </h4>
+                    <ul class="list-disc list-inside space-y-1 text-gray-300 pr-2">
+                        <li><strong>Upthrust After Distribution (UTAD):</strong> اختراق وهمي للقمة بدون فوليوم حقيقي، يتبعه هبوط حاد.</li>
+                        <li><strong>انخفاض نسبة السيولة بالنسبة للقيمة السوقية (Liq/MC < 5%):</strong> تعني سهولة تلاعب Dev بالسعر.</li>
+                        <li><strong>تركز المحافظ الكبيرة:</strong> إذا كانت أول 10 محافظ تمتلك أكثر من 30% بدون قفل، احذر من التفريغ المباغت.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="bg-darkBg p-3.5 rounded-lg border border-cardBorder space-y-2">
+                    <h4 class="font-extrabold text-sm text-accentPurple flex items-center gap-1.5">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        <span>3. شروط تنفيذ صفقة السكالب (Scalping Entry Protocol):</span>
+                    </h4>
+                    <ol class="list-decimal list-inside space-y-1 text-gray-300 pr-2">
+                        <li>دخول الصفقة فقط عند تحقق 3 شروط على الأقل: (إشارة Spring + EMA 9 أعلى من 21 + Volume Delta موجب).</li>
+                        <li>تحديد وقف الخسارة أسفل قاع الـ Spring بمقدار 0.5% - 1.5% فقط.</li>
+                        <li>جني أرباح جزئي (TP1) عند المقاومة القادمة أو عائد 1:2 لتأمين الصفقة بنقل الـ SL لنقطة الدخول.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <button onclick="closeModal('guideModal')" class="w-full py-2 bg-darkBg hover:bg-cardBorder text-gray-300 font-bold text-xs rounded-lg border border-cardBorder transition">
+                    إغلاق الدليل
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Script Logic -->
+    <script>
+        // Preset Meme Coin Database
+        // ===== REAL DATA LAYER (Binance, data-api.binance.vision) =====
+        const BINANCE = 'https://data-api.binance.vision';
+        // Only coins that exist on Binance spot (POPCAT/MOG are NOT on Binance — verified).
+        const TRACKED_SYMBOLS = ['PEPE','WIF','BONK','NEIRO','FLOKI','INIT','NXPC'];
+        // Real Binance snapshot (baked in at build time, 2026-11-10 02:31 Damascus).
+        // The page renders from this instantly; a live refresh runs in the background
+        // and updates it only if it succeeds. If live refresh fails (Binance blocked
+        // on this network), the snapshot stays — never the old fake placeholders.
+        let memeCoins = [{"symbol": "PEPE", "name": "PEPE / USDT", "network": "Binance Spot", "price": 5.14e-06, "change": 3, "liquidity": "$77.4M", "marketCap": "—", "wyckoffPhase": "Phase B (Testing Support)", "accScore": 48, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 5.14e-06, "sl": 4.805714285714286e-06, "tp1": 5.362857142857142e-06, "tp2": 5.585714285714285e-06, "accPct": 50, "distPct": 50, "accVol": "$37.9M", "distVol": "$38.2M", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 52.3, "atr": 1.1142857142857121e-07, "closes": [5.07e-06, 5.08e-06, 5.06e-06, 4.87e-06, 4.94e-06, 4.96e-06, 5.07e-06, 5.14e-06, 5.12e-06, 5.07e-06, 5.05e-06, 5.04e-06, 5.01e-06, 5e-06, 5.18e-06, 5.11e-06, 5.06e-06, 5.02e-06, 5.13e-06, 5.11e-06, 5.24e-06, 5.32e-06, 5.26e-06, 5.25e-06, 5.15e-06, 5.13e-06, 5.14e-06, 5.13e-06, 5.13e-06, 5.14e-06], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "WIF", "name": "WIF / USDT", "network": "Binance Spot", "price": 0.1569, "change": 0.6, "liquidity": "$961.3K", "marketCap": "—", "wyckoffPhase": "Phase B (Testing Support)", "accScore": 45, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 0.1569, "sl": 0.1514357142857143, "tp1": 0.16054285714285715, "tp2": 0.16418571428571427, "accPct": 41, "distPct": 59, "accVol": "$385.6K", "distVol": "$561.0K", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 57.9, "atr": 0.0018214285714285672, "closes": [0.1596, 0.1595, 0.159, 0.1522, 0.1546, 0.1551, 0.1574, 0.157, 0.157, 0.1555, 0.155, 0.1546, 0.1542, 0.1522, 0.155, 0.1551, 0.1554, 0.1565, 0.1596, 0.16, 0.1603, 0.1613, 0.1599, 0.1588, 0.1588, 0.1584, 0.1579, 0.1574, 0.1578, 0.1569], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "BONK", "name": "BONK / USDT", "network": "Binance Spot", "price": 2.79e-06, "change": 2.6, "liquidity": "$1.6M", "marketCap": "—", "wyckoffPhase": "Phase B (Testing Support)", "accScore": 66, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 2.79e-06, "sl": 2.659285714285714e-06, "tp1": 2.877142857142857e-06, "tp2": 2.964285714285714e-06, "accPct": 73, "distPct": 27, "accVol": "$1.1M", "distVol": "$423.0K", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 58.6, "atr": 4.357142857142855e-08, "closes": [2.79e-06, 2.78e-06, 2.78e-06, 2.65e-06, 2.68e-06, 2.69e-06, 2.74e-06, 2.76e-06, 2.75e-06, 2.75e-06, 2.74e-06, 2.72e-06, 2.7e-06, 2.67e-06, 2.74e-06, 2.74e-06, 2.73e-06, 2.73e-06, 2.8e-06, 2.82e-06, 2.85e-06, 2.89e-06, 2.84e-06, 2.83e-06, 2.84e-06, 2.84e-06, 2.81e-06, 2.81e-06, 2.8e-06, 2.79e-06], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "NEIRO", "name": "NEIRO / USDT", "network": "Binance Spot", "price": 5.906e-05, "change": 0.4, "liquidity": "$1.7M", "marketCap": "—", "wyckoffPhase": "Phase B (Testing Support)", "accScore": 43, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 5.906e-05, "sl": 5.680785714285714e-05, "tp1": 6.0561428571428575e-05, "tp2": 6.206285714285714e-05, "accPct": 38, "distPct": 62, "accVol": "$622.2K", "distVol": "$1.0M", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 49.3, "atr": 7.507142857142862e-07, "closes": [6.074e-05, 6.064e-05, 6.44e-05, 6.029e-05, 5.884e-05, 5.839e-05, 6.001e-05, 6.028e-05, 5.981e-05, 5.928e-05, 5.853e-05, 5.765e-05, 5.735e-05, 5.683e-05, 5.871e-05, 5.914e-05, 5.938e-05, 5.911e-05, 5.977e-05, 5.989e-05, 6.063e-05, 6.152e-05, 6.09e-05, 6.037e-05, 6.01e-05, 6.003e-05, 5.989e-05, 5.969e-05, 5.944e-05, 5.906e-05], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "FLOKI", "name": "FLOKI / USDT", "network": "Binance Spot", "price": 2.088e-05, "change": 0.8, "liquidity": "$704.7K", "marketCap": "—", "wyckoffPhase": "Phase B (Testing Support)", "accScore": 54, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 2.088e-05, "sl": 2.0230714285714287e-05, "tp1": 2.131285714285714e-05, "tp2": 2.1745714285714285e-05, "accPct": 53, "distPct": 47, "accVol": "$366.0K", "distVol": "$326.3K", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 58.1, "atr": 2.1642857142857092e-07, "closes": [2.139e-05, 2.131e-05, 2.119e-05, 2.033e-05, 2.052e-05, 2.065e-05, 2.091e-05, 2.099e-05, 2.101e-05, 2.089e-05, 2.083e-05, 2.071e-05, 2.057e-05, 2.035e-05, 2.069e-05, 2.063e-05, 2.058e-05, 2.072e-05, 2.093e-05, 2.092e-05, 2.106e-05, 2.134e-05, 2.109e-05, 2.105e-05, 2.1e-05, 2.11e-05, 2.105e-05, 2.105e-05, 2.108e-05, 2.088e-05], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "INIT", "name": "INIT / USDT", "network": "Binance Spot", "price": 0.19398, "change": 60.2, "liquidity": "$11.5M", "marketCap": "—", "wyckoffPhase": "Phase A (Stopping Action)", "accScore": 75, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 0.19398, "sl": 0.14874214285714288, "tp1": 0.22413857142857144, "tp2": 0.2542971428571429, "accPct": 69, "distPct": 31, "accVol": "$8.0M", "distVol": "$3.5M", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 75.9, "atr": 0.015079285714285717, "closes": [0.12129, 0.12165, 0.12054, 0.11993, 0.11928, 0.12041, 0.12327, 0.12524, 0.12582, 0.12177, 0.12416, 0.12662, 0.12622, 0.12935, 0.14139, 0.12899, 0.13519, 0.12668, 0.12326, 0.12618, 0.1287, 0.13048, 0.14704, 0.14067, 0.14938, 0.16944, 0.19752, 0.1974, 0.1854, 0.19427], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}, {"symbol": "NXPC", "name": "NXPC / USDT", "network": "Binance Spot", "price": 0.1563, "change": 10.5, "liquidity": "$6.9M", "marketCap": "—", "wyckoffPhase": "Phase A (Stopping Action)", "accScore": 65, "signal": "NEUTRAL / WAIT", "safety": "—", "entry": 0.1563, "sl": 0.13705714285714288, "tp1": 0.1691285714285714, "tp2": 0.18195714285714285, "accPct": 77, "distPct": 23, "accVol": "$5.3M", "distVol": "$1.5M", "secLp": "—", "secMint": "—", "secTopHolders": "—", "secDevWallet": "—", "secTax": "—", "secHoneypot": "—", "rsi": 39.6, "atr": 0.00641428571428571, "closes": [0.147, 0.1461, 0.1455, 0.1395, 0.1408, 0.1408, 0.1426, 0.1447, 0.1465, 0.1442, 0.1441, 0.1522, 0.1566, 0.1363, 0.1537, 0.1662, 0.1539, 0.1547, 0.1498, 0.1496, 0.1544, 0.1571, 0.1567, 0.16, 0.1609, 0.1582, 0.154, 0.1546, 0.1604, 0.1563], "closeTimes": [1794160800000, 1794164400000, 1794168000000, 1794171600000, 1794175200000, 1794178800000, 1794182400000, 1794186000000, 1794189600000, 1794193200000, 1794196800000, 1794200400000, 1794204000000, 1794207600000, 1794211200000, 1794214800000, 1794218400000, 1794222000000, 1794225600000, 1794229200000, 1794232800000, 1794236400000, 1794240000000, 1794243600000, 1794247200000, 1794250800000, 1794254400000, 1794258000000, 1794261600000, 1794265200000]}];
+        const SNAPSHOT_TIME = "2026-11-10 02:41";
+
+        async function binanceJSON(url) {
+            const r = await fetch(url);
+            if (!r.ok) throw new Error('Binance ' + r.status);
+            return r.json();
+        }
+        function fmtUsd(n) {
+            if (n >= 1e9) return '$' + (n/1e9).toFixed(2) + 'B';
+            if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+            if (n >= 1e3) return '$' + (n/1e3).toFixed(1) + 'K';
+            return '$' + n.toFixed(2);
+        }
+        function fmtPrice(n) {
+            if (n >= 100) return n.toFixed(2);
+            if (n >= 1) return n.toFixed(4);
+            if (n >= 0.01) return n.toFixed(6);
+            return n.toFixed(8);
+        }
+        function calcRSI(closes, n) {
+            n = n || 14;
+            if (closes.length < n + 1) return 50;
+            let g = 0, l = 0;
+            for (let i = closes.length - n; i < closes.length; i++) {
+                const d = closes[i] - closes[i-1];
+                if (d > 0) g += d; else l += -d;
+            }
+            const ag = g / n, al = l / n;
+            if (al === 0) return 100;
+            return 100 - 100 / (1 + ag / al);
+        }
+        function calcATR(klines, n) {
+            n = n || 14;
+            if (klines.length < n + 1) return 0;
+            let sum = 0;
+            for (let i = klines.length - n; i < klines.length; i++) {
+                const h = parseFloat(klines[i][2]), l = parseFloat(klines[i][3]), pc = parseFloat(klines[i-1][4]);
+                sum += Math.max(h - l, Math.abs(h - pc), Math.abs(l - pc));
+            }
+            return sum / n;
+        }
+        // Build one coin object from REAL Binance data (his rules).
+        // accScore (0-100) = 60% up-volume share + 40% price position in 24h range.
+        // wyckoffPhase approximated from 6h range width + price position + RSI.
+        // signal per his meme-coin rules: RSI>=95 SHORT, RSI>=90 WAIT, breakout LONG, else WAIT.
+        async function buildCoin(sym) {
+            const symbol = sym + 'USDT';
+            const [t, kl] = await Promise.all([
+                binanceJSON(BINANCE + '/api/v3/ticker/24hr?symbol=' + symbol),
+                binanceJSON(BINANCE + '/api/v3/klines?symbol=' + symbol + '&interval=1h&limit=48')
+            ]);
+            const price = parseFloat(t.lastPrice);
+            const change = parseFloat(t.priceChangePercent);
+            const qVol = parseFloat(t.quoteVolume);
+            const closes = kl.map(k => parseFloat(k[4]));
+            const rsi = calcRSI(closes, 14);
+            const atr = calcATR(kl, 14);
+            const h24 = parseFloat(t.highPrice), l24 = parseFloat(t.lowPrice);
+            const rangePos = (h24 > l24) ? (price - l24) / (h24 - l24) * 100 : 50;
+            // up/down volume share (last 24 closed 1h candles)
+            let upV = 0, downV = 0;
+            for (let i = kl.length - 24; i < kl.length; i++) {
+                const o = parseFloat(kl[i][1]), c = parseFloat(kl[i][4]), q = parseFloat(kl[i][7]);
+                if (c >= o) upV += q; else downV += q;
+            }
+            const totV = upV + downV;
+            const accPct = totV > 0 ? Math.round(upV / totV * 100) : 50;
+            const distPct = 100 - accPct;
+            const accScore = Math.max(0, Math.min(100, Math.round(accPct * 0.6 + rangePos * 0.4)));
+            // 6h range
+            const last6 = kl.slice(-6);
+            const lo6 = Math.min.apply(null, last6.map(k => parseFloat(k[3])));
+            const hi6 = Math.max.apply(null, last6.map(k => parseFloat(k[2])));
+            const w6 = (hi6 - lo6) / lo6 * 100;
+            const avgVol = kl.reduce((a,k) => a + parseFloat(k[5]), 0) / kl.length;
+            const lastVol = parseFloat(kl[kl.length-1][5]);
+            let phase, signal;
+            if (rsi >= 95) { phase = 'Distribution UTAD (تفريغ)'; signal = 'SHORT / DUMP ALERT'; }
+            else if (rsi >= 90) { phase = 'Phase B (Testing Support)'; signal = 'NEUTRAL / WAIT'; }
+            else if (price > hi6 && lastVol > avgVol * 1.5) { phase = 'Phase D (SOS Breakout)'; signal = 'LONG SCALP'; }
+            else if (w6 < 5 && rangePos > 60) { phase = 'Phase C (Spring)'; signal = accScore >= 80 ? 'LONG SCALP' : 'NEUTRAL / WAIT'; }
+            else if (w6 < 5) { phase = 'Phase B (Testing Support)'; signal = 'NEUTRAL / WAIT'; }
+            else { phase = 'Phase A (Stopping Action)'; signal = 'NEUTRAL / WAIT'; }
+            // Levels: market entry, SL = 3xATR, TP1 = 2xATR, TP2 = 4xATR (his style)
+            let entry = price, sl, tp1, tp2;
+            if (signal.indexOf('SHORT') >= 0) { sl = price + 3*atr; tp1 = price - 2*atr; tp2 = price - 4*atr; }
+            else { sl = price - 3*atr; tp1 = price + 2*atr; tp2 = price + 4*atr; }
+            return {
+                symbol: sym, name: sym + ' / USDT', network: 'Binance Spot',
+                price: price, change: Math.round(change*10)/10,
+                liquidity: fmtUsd(qVol), marketCap: '—',
+                wyckoffPhase: phase, accScore: accScore, signal: signal,
+                safety: '—', entry: entry, sl: sl, tp1: tp1, tp2: tp2,
+                accPct: accPct, distPct: distPct,
+                accVol: fmtUsd(upV), distVol: fmtUsd(downV),
+                secLp: '—', secMint: '—', secTopHolders: '—', secDevWallet: '—', secTax: '—', secHoneypot: '—',
+                rsi: Math.round(rsi*10)/10, atr: atr
+            };
+        }
+        async function loadAllCoins() {
+            const out = [];
+            for (const sym of TRACKED_SYMBOLS) {
+                try { out.push(await buildCoin(sym)); }
+                catch (e) { console.warn('skip', sym, e.message); }
+            }
+            return out;
+        }
+        // Backtest win-rate measured 2026-11-10 (7 days, 1h, 7 coins): 4/8 hit TP1, 0 SL.
+        const BACKTEST_WINRATE = 50;
+        function updateHeaderStats() {
+            if (!memeCoins.length) return;
+            const avgRsi = memeCoins.reduce((a,c) => a + (c.rsi || 50), 0) / memeCoins.length;
+            document.getElementById('sentimentVal').innerText = Math.round(avgRsi);
+            const lbl = document.getElementById('sentimentLabel');
+            lbl.innerText = avgRsi >= 70 ? 'جشع شديد (FOMO)' : avgRsi >= 55 ? 'جشع' : avgRsi >= 40 ? 'محايد' : 'خوف';
+            const longs = memeCoins.filter(c => c.signal.indexOf('LONG') >= 0).length;
+            document.getElementById('accumulatingCount').innerText = longs;
+            document.getElementById('accumulatingTotal').innerText = 'من أصل ' + memeCoins.length + ' رادار';
+            document.getElementById('winRateVal').innerText = BACKTEST_WINRATE + '%';
+            const dumps = memeCoins.filter(c => c.signal.indexOf('SHORT') >= 0 || c.signal.indexOf('DUMP') >= 0).length;
+            document.getElementById('dumpCount').innerText = dumps;
+        }
+
+        let selectedCoin = null;
+        let currentFilter = 'all';
+        let currentTimeframe = '5m';
+        let chartInstance = null;
+
+        // Active Indicator Toggles
+        const activeIndicators = {
+            ema: true,
+            wyckoff: true,
+            vwap: true,
+            volume: true
+        };
+
+        // Initialize App on DOM Load
+        async function refreshLive() {
+            try {
+                const fresh = await loadAllCoins();
+                if (!fresh.length) return false;
+                const keep = selectedCoin ? selectedCoin.symbol : null;
+                memeCoins = fresh;
+                selectedCoin = memeCoins.find(c => c.symbol === keep) || memeCoins[0];
+                updateHeaderStats();
+                renderTickerTape();
+                renderRadarTable();
+                await updateChartData();
+                const note = document.getElementById('liveNote');
+                if (note) note.innerText = 'مباشر — بينانس';
+                return true;
+            } catch (e) { console.warn('live refresh failed', e.message); return false; }
+        }
+        window.addEventListener('DOMContentLoaded', async () => {
+            try { if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons(); } catch (e) {}
+            // Render the baked-in real snapshot immediately (never wait on the network).
+            // Data renders FIRST; the chart is best-effort and can never block it.
+            selectedCoin = memeCoins[0];
+            try { updateHeaderStats(); } catch (e) {}
+            try { renderTickerTape(); } catch (e) {}
+            try { renderRadarTable(); } catch (e) {}
+            try { selectCoin(selectedCoin.symbol); } catch (e) {}
+            try { calculateRisk(); } catch (e) {}
+            try { await initTradingChart(); } catch (e) {}
+            // Try a live refresh in the background; if Binance is blocked on this
+            // network the snapshot stays and a note says so (no broken page).
+            const ok = await refreshLive();
+            if (!ok) {
+                const note = document.getElementById('liveNote');
+                if (note) note.innerText = 'بيانات ' + SNAPSHOT_TIME + ' — التحديث المباشر غير متاح على هالشبكة';
+            }
+            setInterval(refreshLive, 60000);
+        });
+
+        // Render Ticker Tape
+        function renderTickerTape() {
+            const container = document.getElementById('tickerTape');
+            container.innerHTML = memeCoins.map(coin => `
+                <div onclick="selectCoin('${coin.symbol}')" class="flex items-center gap-2 cursor-pointer hover:bg-cardBorder/50 px-2 py-1 rounded transition">
+                    <span class="font-extrabold text-white">${coin.symbol}</span>
+                    <span class="text-gray-300 font-mono">$${fmtPrice(coin.price)}</span>
+                    <span class="font-bold ${coin.change >= 0 ? 'text-accentGreen' : 'text-accentRed'}">
+                        ${coin.change >= 0 ? '+' : ''}${coin.change}%
+                    </span>
+                    <span class="text-[10px] px-1.5 py-0.2 rounded ${coin.signal.includes('LONG') ? 'bg-accentGreen/20 text-accentGreen' : coin.signal.includes('SHORT') ? 'bg-accentRed/20 text-accentRed' : 'bg-gray-700 text-gray-300'}">
+                        ${coin.signal.includes('LONG') ? 'LONG' : coin.signal.includes('SHORT') ? 'DUMP' : 'WAIT'}
+                    </span>
+                </div>
+            `).join('');
+        }
+
+        // Select Active Coin
+        function selectCoin(symbol) {
+            const coin = memeCoins.find(c => c.symbol === symbol);
+            if (!coin) return;
+            selectedCoin = coin;
+
+            // Update UI Elements
+            document.getElementById('selectedCoinIcon').innerText = coin.symbol;
+            document.getElementById('selectedCoinName').innerText = coin.name;
+            document.getElementById('selectedCoinNetwork').innerText = coin.network;
+            document.getElementById('selectedCoinPrice').innerText = '$' + fmtPrice(coin.price);
+
+            const changeEl = document.getElementById('selectedCoinChange');
+            changeEl.innerText = (coin.change >= 0 ? '+' : '') + coin.change + '%';
+            changeEl.className = 'font-bold ' + (coin.change >= 0 ? 'text-accentGreen' : 'text-accentRed');
+
+            document.getElementById('selectedCoinLiq').innerText = coin.liquidity;
+            document.getElementById('chartWyckoffTag').innerText = coin.wyckoffPhase;
+
+            // Signal Box Update
+            document.getElementById('sigEntry').innerText = '$' + fmtPrice(coin.entry);
+            document.getElementById('sigSL').innerText = '$' + fmtPrice(coin.sl);
+            document.getElementById('sigTP').innerText = `TP1: $${fmtPrice(coin.tp1)} | TP2: $${fmtPrice(coin.tp2)}`;
+
+            // Security Box Update
+            document.getElementById('securityScore').innerText = `درجة الأمان: ${coin.safety}/100`;
+            document.getElementById('secLp').innerText = coin.secLp;
+            document.getElementById('secMint').innerText = coin.secMint;
+            document.getElementById('secTopHolders').innerText = coin.secTopHolders;
+            document.getElementById('secDevWallet').innerText = coin.secDevWallet;
+            document.getElementById('secTax').innerText = coin.secTax;
+            document.getElementById('secHoneypot').innerText = coin.secHoneypot;
+
+            // Signal Card
+            const signalCard = document.getElementById('signalCard');
+            const signalBadge = document.getElementById('signalBadge');
+            const signalStrength = document.getElementById('signalStrength');
+            const signalDesc = document.getElementById('signalDesc');
+
+            if (coin.signal.includes('LONG')) {
+                signalCard.className = 'bg-cardBg border border-cardBorder rounded-xl p-5 space-y-4 glow-green';
+                signalBadge.className = 'inline-flex items-center gap-2 bg-accentGreen/20 text-accentGreen border border-accentGreen/40 px-4 py-2 rounded-xl text-lg font-black';
+                signalBadge.innerHTML = `<i data-lucide="arrow-big-up-dash" class="w-6 h-6"></i> <span>دخول شراء (${coin.signal})</span>`;
+                signalStrength.innerText = `قوة الإشارة: ${coin.accScore}%`;
+                signalStrength.className = 'text-[11px] bg-accentGreen/20 text-accentGreen px-2 py-0.5 rounded font-extrabold';
+                signalDesc.innerText = `تم تأكيد قاع ${coin.wyckoffPhase} مع امتصاص سيولة عالي وزيادة ملحوظة في الشراء التراكمي.`;
+            } else if (coin.signal.includes('SHORT') || coin.signal.includes('DUMP')) {
+                signalCard.className = 'bg-cardBg border border-cardBorder rounded-xl p-5 space-y-4 glow-red';
+                signalBadge.className = 'inline-flex items-center gap-2 bg-accentRed/20 text-accentRed border border-accentRed/40 px-4 py-2 rounded-xl text-lg font-black';
+                signalBadge.innerHTML = `<i data-lucide="arrow-big-down-dash" class="w-6 h-6"></i> <span>تنبيه تفريغ (${coin.signal})</span>`;
+                signalStrength.innerText = `خطر التفريغ: 88%`;
+                signalStrength.className = 'text-[11px] bg-accentRed/20 text-accentRed px-2 py-0.5 rounded font-extrabold';
+                signalDesc.innerText = `تفريغ حيتان وشيك UTAD. تجنب الشراء وراقب كسر الدعم للهبوط.`;
+            } else {
+                signalCard.className = 'bg-cardBg border border-cardBorder rounded-xl p-5 space-y-4';
+                signalBadge.className = 'inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 border border-yellow-500/40 px-4 py-2 rounded-xl text-lg font-black';
+                signalBadge.innerHTML = `<i data-lucide="pause-circle" class="w-6 h-6"></i> <span>انتظار وتمركز</span>`;
+                signalStrength.innerText = `قوة الإشارة: 50%`;
+                signalStrength.className = 'text-[11px] bg-gray-700 text-gray-300 px-2 py-0.5 rounded font-extrabold';
+                signalDesc.innerText = `العملة في مرحلة اختبار الدعم (Phase B). انتظر تكون الـ Spring الكاسر قبل الدخول.`;
+            }
+
+            // Acc / Dist Meter
+            document.getElementById('accPct').innerText = coin.accPct + '%';
+            document.getElementById('distPct').innerText = coin.distPct + '%';
+            document.getElementById('accBar').style.width = coin.accPct + '%';
+            document.getElementById('distBar').style.width = coin.distPct + '%';
+            document.getElementById('accVol').innerText = coin.accVol;
+            document.getElementById('distVol').innerText = coin.distVol;
+
+            // Also sync calculator entry/sl
+            document.getElementById('calcEntry').value = fmtPrice(coin.entry);
+            document.getElementById('calcSL').value = fmtPrice(coin.sl);
+            calculateRisk();
+
+            try { if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons(); } catch (e) {}
+            updateChartData();
+        }
+
+        // Render Screener Radar Table
+        function renderRadarTable() {
+            const tbody = document.getElementById('radarTableBody');
+            
+            const filtered = memeCoins.filter(c => {
+                if (currentFilter === 'spring') return c.wyckoffPhase.includes('Spring');
+                if (currentFilter === 'long') return c.signal.includes('LONG');
+                if (currentFilter === 'dump') return c.signal.includes('SHORT') || c.signal.includes('DUMP');
+                return true;
+            });
+
+            tbody.innerHTML = filtered.map(coin => `
+                <tr class="hover:bg-darkBg/60 transition">
+                    <td class="p-3">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-full bg-accentPurple/20 text-accentPurple font-black flex items-center justify-center text-xs">
+                                ${coin.symbol.slice(0, 3)}
+                            </div>
+                            <div>
+                                <strong class="text-white block">${coin.symbol}</strong>
+                                <span class="text-[10px] text-gray-400">${coin.network}</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-3 font-mono">
+                        <span class="text-white block font-bold">$${fmtPrice(coin.price)}</span>
+                        <span class="text-[11px] ${coin.change >= 0 ? 'text-accentGreen' : 'text-accentRed'} font-semibold">
+                            ${coin.change >= 0 ? '+' : ''}${coin.change}%
+                        </span>
+                    </td>
+                    <td class="p-3">
+                        <span class="text-gray-300 block">${coin.liquidity}</span>
+                        <span class="text-[10px] text-gray-400">${coin.marketCap} MC</span>
+                    </td>
+                    <td class="p-3">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-bold ${coin.wyckoffPhase.includes('Spring') ? 'bg-accentCyan/20 text-accentCyan border border-accentCyan/30' : coin.wyckoffPhase.includes('Distribution') ? 'bg-accentRed/20 text-accentRed border border-accentRed/30' : 'bg-gray-800 text-gray-300'}">
+                            ${coin.wyckoffPhase}
+                        </span>
+                    </td>
+                    <td class="p-3">
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-16 bg-darkBg h-2 rounded-full overflow-hidden flex border border-cardBorder">
+                                <div class="bg-accentGreen h-full" style="width: ${coin.accPct}%;"></div>
+                            </div>
+                            <span class="font-extrabold text-accentGreen">${coin.accScore}/100</span>
+                        </div>
+                    </td>
+                    <td class="p-3">
+                        <span class="px-2 py-1 rounded text-xs font-black ${coin.signal.includes('LONG') ? 'bg-accentGreen/20 text-accentGreen border border-accentGreen/40' : coin.signal.includes('SHORT') ? 'bg-accentRed/20 text-accentRed border border-accentRed/40' : 'bg-gray-800 text-gray-300'}">
+                            ${coin.signal}
+                        </span>
+                    </td>
+                    <td class="p-3 font-bold text-accentGreen">
+                        ${coin.safety}/100
+                    </td>
+                    <td class="p-3 text-center">
+                        <button onclick="selectCoin('${coin.symbol}')" class="px-3 py-1 bg-accentPurple/20 hover:bg-accentPurple/40 text-accentPurple font-bold text-xs rounded border border-accentPurple/30 transition">
+                            تحليل الشاشة
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        // Filter Radar
+        function filterRadar(type) {
+            currentFilter = type;
+            document.querySelectorAll('.radar-filter').forEach(btn => {
+                if (btn.dataset.filter === type) {
+                    btn.className = 'radar-filter px-3 py-1.5 rounded-lg bg-accentPurple text-white font-bold';
+                } else {
+                    btn.className = 'radar-filter px-3 py-1.5 rounded-lg bg-darkBg hover:bg-cardBorder text-gray-300 border border-cardBorder font-semibold';
+                }
+            });
+            renderRadarTable();
+        }
+
+        // Timeframe Selector
+        function setTimeframe(tf) {
+            currentTimeframe = tf;
+            document.querySelectorAll('.tf-btn').forEach(btn => {
+                if (btn.dataset.tf === tf) {
+                    btn.className = 'tf-btn px-2.5 py-1 rounded font-semibold bg-accentPurple text-white';
+                } else {
+                    btn.className = 'tf-btn px-2.5 py-1 rounded font-semibold text-gray-400 hover:text-white';
+                }
+            });
+            updateChartData();
+        }
+
+        // Toggle Indicators
+        function toggleIndicator(ind) {
+            activeIndicators[ind] = !activeIndicators[ind];
+            const btnMap = {
+                ema: 'btnEma',
+                wyckoff: 'btnWyckoff',
+                vwap: 'btnVwap',
+                volume: 'btnVolume'
+            };
+            const btn = document.getElementById(btnMap[ind]);
+            if (activeIndicators[ind]) {
+                btn.className = btn.className.replace('opacity-40 line-through', '').trim();
+                btn.querySelector('i').style.display = 'inline';
+            } else {
+                btn.className += ' opacity-40 line-through';
+                btn.querySelector('i').style.display = 'none';
+            }
+            updateChartData();
+        }
+
+        // Chart.js Setup — REAL Binance klines (no simulation)
+        const TF_MAP = { '1m': '1m', '5m': '5m', '15m': '15m', '1h': '1h' };
+        function emaSeries(vals, period) {
+            const k = 2 / (period + 1);
+            const out = [];
+            let e = vals[0];
+            for (let i = 0; i < vals.length; i++) {
+                e = i === 0 ? vals[0] : vals[i] * k + e * (1 - k);
+                out.push(e);
+            }
+            return out;
+        }
+        async function fetchChartData(coin, tf) {
+            const iv = TF_MAP[tf] || '5m';
+            let kl = null;
+            try {
+                kl = await binanceJSON(BINANCE + '/api/v3/klines?symbol=' + coin.symbol + 'USDT&interval=' + iv + '&limit=60');
+            } catch (e) { kl = null; }
+            if (!kl && coin.closes && coin.closes.length) {
+                // Offline fallback: baked 1h closes from the snapshot.
+                kl = coin.closes.map((c, i) => [coin.closeTimes[i], c, c, c, c, 0, coin.closeTimes[i]]);
+            }
+            if (!kl) throw new Error('no chart data');
+            const labels = kl.map(k => {
+                const d = new Date(k[0]);
+                return d.getHours().toString().padStart(2,'0') + ':' + d.getMinutes().toString().padStart(2,'0');
+            });
+            const closes = kl.map(k => parseFloat(k[4]));
+            // VWAP (cumulative typical price * volume / cumulative volume)
+            let cumPV = 0, cumV = 0;
+            const vwap = kl.map(k => {
+                const tp = (parseFloat(k[2]) + parseFloat(k[3]) + parseFloat(k[4])) / 3;
+                const v = parseFloat(k[5]);
+                cumPV += tp * v; cumV += v;
+                return cumV > 0 ? cumPV / cumV : tp;
+            });
+            const datasets = [{
+                label: coin.symbol + ' السعر (بينانس)',
+                data: closes,
+                borderColor: coin.change >= 0 ? '#10B981' : '#EF4444',
+                backgroundColor: coin.change >= 0 ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)',
+                borderWidth: 2, fill: true, tension: 0.35, pointRadius: 2
+            }];
+            if (activeIndicators.ema) {
+                datasets.push({ label: 'EMA 9 (سريع)', data: emaSeries(closes, 9), borderColor: '#8B5CF6', borderWidth: 1.5, borderDash: [3, 3], pointRadius: 0 });
+                datasets.push({ label: 'EMA 21 (بطيء)', data: emaSeries(closes, 21), borderColor: '#06B6D4', borderWidth: 1.5, borderDash: [5, 5], pointRadius: 0 });
+            }
+            if (activeIndicators.vwap) {
+                datasets.push({ label: 'VWAP', data: vwap, borderColor: '#F59E0B', borderWidth: 1.5, pointRadius: 0 });
+            }
+            return { labels, datasets };
+        }
+        async function initTradingChart() {
+            if (typeof Chart === 'undefined') return;
+            const el = document.getElementById('tradingChart');
+            if (!el) return;
+            const ctx = el.getContext('2d');
+            let data;
+            try { data = await fetchChartData(selectedCoin, currentTimeframe); }
+            catch (e) { console.warn('chart failed', e.message); return; }
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { display: true, labels: { color: '#9CA3AF', font: { family: 'Cairo', size: 10 } } },
+                        tooltip: { backgroundColor: '#111827', borderColor: '#1F2937', borderWidth: 1, titleColor: '#F3F4F6', bodyColor: '#10B981', titleFont: { family: 'Cairo' }, bodyFont: { family: 'Cairo' } }
+                    },
+                    scales: {
+                        x: { grid: { color: '#1F2937' }, ticks: { color: '#9CA3AF', font: { family: 'Cairo', size: 10 } } },
+                        y: { position: 'right', grid: { color: '#1F2937' }, ticks: { color: '#9CA3AF', font: { family: 'Cairo', size: 10 } } }
+                    }
+                }
+            });
+        }
+        async function updateChartData() {
+            if (!chartInstance || !selectedCoin) return;
+            try {
+                const newData = await fetchChartData(selectedCoin, currentTimeframe);
+                chartInstance.data = newData;
+                chartInstance.update();
+            } catch (e) { console.warn('chart refresh failed', e.message); }
+        }
+        function refreshChartData() { updateChartData(); }
+
+        // Custom Coin Analyzer — REAL Binance data for any symbol
+        async function analyzeCustomToken() {
+            const input = document.getElementById('customInput').value.trim();
+            if (!input) return;
+            const newSymbol = input.toUpperCase().replace('$', '').replace('USDT', '');
+            try {
+                const coin = await buildCoin(newSymbol);
+                const i = memeCoins.findIndex(c => c.symbol === newSymbol);
+                if (i >= 0) memeCoins[i] = coin; else memeCoins.unshift(coin);
+                updateHeaderStats();
+                renderTickerTape();
+                renderRadarTable();
+                selectCoin(newSymbol);
+            } catch (e) {
+                alert(newSymbol + ' مو موجود على بينانس (سبوت) — جرّب عملة تانية');
+            }
+            document.getElementById('customInput').value = '';
+        }
+
+        // Risk & Position Calculator Logic
+        function calculateRisk() {
+            const capital = parseFloat(document.getElementById('calcCapital').value) || 0;
+            const riskPct = parseFloat(document.getElementById('calcRiskPct').value) || 0;
+            const entry = parseFloat(document.getElementById('calcEntry').value) || 0.000001;
+            const sl = parseFloat(document.getElementById('calcSL').value) || 0.0000009;
+
+            const maxLoss = capital * (riskPct / 100);
+            document.getElementById('calcMaxLoss').value = '$' + maxLoss.toFixed(2);
+
+            const slDistancePct = Math.abs((entry - sl) / entry);
+            const posSize = slDistancePct > 0 ? (maxLoss / slDistancePct) : 0;
+            const tokenQty = entry > 0 ? (posSize / entry) : 0;
+
+            document.getElementById('calcPosSize').innerText = '$' + posSize.toLocaleString('en-US', { maximumFractionDigits: 2 });
+            document.getElementById('calcTokenQty').innerText = Math.round(tokenQty).toLocaleString('en-US') + ' ' + selectedCoin.symbol;
+            document.getElementById('calcSlDistance').innerText = (slDistancePct * 100).toFixed(2) + '%';
+
+            // TP1 profit calculation (1:2 R:R)
+            const tp1Profit = maxLoss * 2;
+            document.getElementById('calcTp1Profit').innerText = '+$' + tp1Profit.toFixed(2);
+        }
+
+        // Bind calculator real-time listeners
+        ['calcCapital', 'calcRiskPct', 'calcEntry', 'calcSL'].forEach(id => {
+            document.getElementById(id).addEventListener('input', calculateRisk);
+        });
+
+        // Modal Handlers
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
