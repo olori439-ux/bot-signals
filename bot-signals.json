@@ -22,16 +22,6 @@
    "status": "open"
   },
   {
-   "symbol": "ENAUSDT",
-   "dir": "short",
-   "entry": 0.154,
-   "sl": 0.16297692,
-   "tp1": 0.1494,
-   "tp2": 0.1461,
-   "time": "2026-11-10T16:00:45.733Z",
-   "status": "open"
-  },
-  {
    "symbol": "HYPEUSDT",
    "dir": "short",
    "entry": 74.27,
