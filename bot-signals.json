@@ -132,16 +132,6 @@
    "status": "open"
   },
   {
-   "symbol": "GTCUSDT",
-   "dir": "short",
-   "entry": 0.17276,
-   "sl": 0.18550251,
-   "tp1": 0.1676,
-   "tp2": 0.16042,
-   "time": "2026-11-10T00:58:43.836Z",
-   "status": "pending"
-  },
-  {
    "symbol": "RAYUSDT",
    "dir": "short",
    "entry": 1.7186,
