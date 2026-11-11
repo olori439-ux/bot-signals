@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "DODOUSDT",
-   "dir": "long",
-   "entry": 0.02304,
-   "sl": 0.022523634,
-   "tp1": 0.02325,
-   "tp2": 0.02343,
-   "time": "2026-11-11T12:58:36.235Z",
-   "status": "open"
-  },
-  {
    "symbol": "ZAMAUSDT",
    "dir": "short",
    "entry": 0.06546,
