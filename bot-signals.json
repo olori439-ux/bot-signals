@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T02:22:36.236Z",
+ "updated": "2026-11-11T06:07:35.881Z",
  "signals": [
   {
    "symbol": "BFUSDUSDT",
@@ -240,6 +240,16 @@
    "tp2": 0.40318581,
    "time": "2026-11-11T02:22:36.236Z",
    "status": "open"
+  },
+  {
+   "symbol": "BNSOLUSDT",
+   "dir": "short",
+   "entry": 95.3,
+   "sl": 98.832035,
+   "tp1": 94,
+   "tp2": 92.4,
+   "time": "2026-11-11T06:07:35.881Z",
+   "status": "pending"
   }
  ]
 }
