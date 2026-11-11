@@ -112,16 +112,6 @@
    "status": "open"
   },
   {
-   "symbol": "BCHUSDT",
-   "dir": "short",
-   "entry": 232.1,
-   "sl": 238.47387,
-   "tp1": 229.9,
-   "tp2": 226.8,
-   "time": "2026-11-11T14:10:37.200Z",
-   "status": "open"
-  },
-  {
    "symbol": "MSTRBUSDT",
    "dir": "short",
    "entry": 126.22,
