@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T16:52:35.143Z",
+ "updated": "2026-11-11T17:25:36.989Z",
  "signals": [
   {
    "symbol": "TRXUSDT",
@@ -199,6 +199,16 @@
    "tp1": 43.02,
    "tp2": 40.716269,
    "time": "2026-11-11T16:52:35.143Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "QNTUSDT",
+   "dir": "short",
+   "entry": 183.55,
+   "sl": 191.22197,
+   "tp1": 180,
+   "tp2": 177.04,
+   "time": "2026-11-11T17:25:36.989Z",
    "status": "pending"
   }
  ]
