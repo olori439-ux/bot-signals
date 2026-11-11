@@ -22,16 +22,6 @@
    "status": "open"
   },
   {
-   "symbol": "PEPEUSDT",
-   "dir": "long",
-   "entry": 5.1e-06,
-   "sl": 4.8297217e-06,
-   "tp1": 5.4e-06,
-   "tp2": 5.5504638e-06,
-   "time": "2026-11-10T12:47:33.992Z",
-   "status": "open"
-  },
-  {
    "symbol": "ENAUSDT",
    "dir": "short",
    "entry": 0.154,
