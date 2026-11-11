@@ -132,16 +132,6 @@
    "status": "open"
   },
   {
-   "symbol": "HOTUSDT",
-   "dir": "long",
-   "entry": 0.000416,
-   "sl": 0.00035051758,
-   "tp1": 0.000478,
-   "tp2": 0.000526,
-   "time": "2026-11-10T05:07:35.930Z",
-   "status": "pending"
-  },
-  {
    "symbol": "PROMUSDT",
    "dir": "short",
    "entry": 5.23,
