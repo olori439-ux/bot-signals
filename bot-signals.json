@@ -212,16 +212,6 @@
    "status": "open"
   },
   {
-   "symbol": "SKHYBUSDT",
-   "dir": "short",
-   "entry": 129.45,
-   "sl": 137.01495,
-   "tp1": 123.07,
-   "tp2": 116.84175,
-   "time": "2026-11-10T16:46:42.287Z",
-   "status": "open"
-  },
-  {
    "symbol": "ERAUSDT",
    "dir": "long",
    "entry": 0.075,
