@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T08:21:33.291Z",
+ "updated": "2026-11-11T12:58:36.235Z",
  "signals": [
   {
    "symbol": "TRXUSDT",
@@ -62,6 +62,26 @@
    "status": "open"
   },
   {
+   "symbol": "ERAUSDT",
+   "dir": "long",
+   "entry": 0.075,
+   "sl": 0.068891825,
+   "tp1": 0.0784,
+   "tp2": 0.082,
+   "time": "2026-11-10T19:59:37.089Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "HYPEUSDT",
+   "dir": "short",
+   "entry": 74.27,
+   "sl": 77.237387,
+   "tp1": 72.49,
+   "tp2": 69.324355,
+   "time": "2026-11-10T21:05:35.565Z",
+   "status": "pending"
+  },
+  {
    "symbol": "XAUTUSDT",
    "dir": "short",
    "entry": 4027.48,
@@ -102,6 +122,16 @@
    "status": "open"
   },
   {
+   "symbol": "BMTUSDT",
+   "dir": "short",
+   "entry": 0.02339,
+   "sl": 0.025131194,
+   "tp1": 0.02211,
+   "tp2": 0.02048801,
+   "time": "2026-11-11T08:00:32.623Z",
+   "status": "pending"
+  },
+  {
    "symbol": "INITUSDT",
    "dir": "long",
    "entry": 0.23268,
@@ -109,6 +139,16 @@
    "tp1": 0.3221,
    "tp2": 0.46152728,
    "time": "2026-11-11T08:21:33.291Z",
+   "status": "open"
+  },
+  {
+   "symbol": "DODOUSDT",
+   "dir": "long",
+   "entry": 0.02304,
+   "sl": 0.022523634,
+   "tp1": 0.02325,
+   "tp2": 0.02343,
+   "time": "2026-11-11T12:58:36.235Z",
    "status": "open"
   }
  ]
