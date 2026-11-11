@@ -232,16 +232,6 @@
    "status": "open"
   },
   {
-   "symbol": "INITUSDT",
-   "dir": "long",
-   "entry": 0.25289,
-   "sl": 0.16271252,
-   "tp1": 0.3221,
-   "tp2": 0.40318581,
-   "time": "2026-11-11T02:22:36.236Z",
-   "status": "open"
-  },
-  {
    "symbol": "BNSOLUSDT",
    "dir": "short",
    "entry": 95.3,
