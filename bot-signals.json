@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T12:55:32.608Z",
+ "updated": "2026-11-12T15:02:40.410Z",
  "signals": [
   {
    "symbol": "TRXUSDT",
@@ -240,6 +240,26 @@
    "tp2": 0.14734,
    "time": "2026-11-12T12:55:32.608Z",
    "status": "open"
+  },
+  {
+   "symbol": "ASTERUSDT",
+   "dir": "short",
+   "entry": 0.6511,
+   "sl": 0.66892564,
+   "tp1": 0.6451,
+   "tp2": 0.6368,
+   "time": "2026-11-12T15:02:40.410Z",
+   "status": "open"
+  },
+  {
+   "symbol": "TIAUSDT",
+   "dir": "short",
+   "entry": 0.4297,
+   "sl": 0.4742726,
+   "tp1": 0.3993,
+   "tp2": 0.35541233,
+   "time": "2026-11-12T15:02:40.410Z",
+   "status": "pending"
   }
  ]
 }
