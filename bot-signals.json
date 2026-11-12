@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T16:00:36.537Z",
+ "updated": "2026-11-12T16:07:38.069Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -240,6 +240,16 @@
    "tp2": 0.044368431,
    "time": "2026-11-12T16:00:36.537Z",
    "status": "open"
+  },
+  {
+   "symbol": "CRCLBUSDT",
+   "dir": "short",
+   "entry": 65.33,
+   "sl": 67.712247,
+   "tp1": 64.5,
+   "tp2": 63.64,
+   "time": "2026-11-12T16:07:38.069Z",
+   "status": "pending"
   }
  ]
 }
