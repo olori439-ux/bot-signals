@@ -42,26 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "SUIUSDT",
-   "dir": "short",
-   "entry": 0.8375,
-   "sl": 0.86488547,
-   "tp1": 0.8188,
-   "tp2": 0.8013,
-   "time": "2026-11-11T23:00:36.587Z",
-   "status": "pending"
-  },
-  {
-   "symbol": "TAOUSDT",
-   "dir": "short",
-   "entry": 219.1,
-   "sl": 226.67917,
-   "tp1": 216.1,
-   "tp2": 212.1,
-   "time": "2026-11-11T23:00:36.587Z",
-   "status": "pending"
-  },
-  {
    "symbol": "RENDERUSDT",
    "dir": "short",
    "entry": 1.593,
