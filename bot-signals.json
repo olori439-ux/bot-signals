@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T23:00:36.587Z",
+ "updated": "2026-11-12T00:00:34.308Z",
  "signals": [
   {
    "symbol": "TRXUSDT",
@@ -209,6 +209,16 @@
    "tp1": 216.1,
    "tp2": 212.1,
    "time": "2026-11-11T23:00:36.587Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "RENDERUSDT",
+   "dir": "short",
+   "entry": 1.593,
+   "sl": 1.6571795,
+   "tp1": 1.531,
+   "tp2": 1.474,
+   "time": "2026-11-12T00:00:34.308Z",
    "status": "pending"
   }
  ]
