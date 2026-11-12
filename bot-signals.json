@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T10:32:36.625Z",
+ "updated": "2026-11-12T12:00:43.745Z",
  "signals": [
   {
    "symbol": "TRXUSDT",
@@ -230,6 +230,16 @@
    "tp2": 400.63017,
    "time": "2026-11-12T10:32:36.625Z",
    "status": "open"
+  },
+  {
+   "symbol": "BCHUSDT",
+   "dir": "short",
+   "entry": 230.7,
+   "sl": 236.4498,
+   "tp1": 226.8,
+   "tp2": 224.4,
+   "time": "2026-11-12T12:00:43.745Z",
+   "status": "pending"
   }
  ]
 }
