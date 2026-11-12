@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "BMTUSDT",
-   "dir": "short",
-   "entry": 0.02339,
-   "sl": 0.025131194,
-   "tp1": 0.02211,
-   "tp2": 0.02048801,
-   "time": "2026-11-11T08:00:32.623Z",
-   "status": "pending"
-  },
-  {
    "symbol": "INITUSDT",
    "dir": "long",
    "entry": 0.23268,
