@@ -132,16 +132,6 @@
    "status": "open"
   },
   {
-   "symbol": "STRKUSDT",
-   "dir": "short",
-   "entry": 0.03691,
-   "sl": 0.038289914,
-   "tp1": 0.03613,
-   "tp2": 0.034610143,
-   "time": "2026-11-12T10:05:36.288Z",
-   "status": "open"
-  },
-  {
    "symbol": "OPGUSDT",
    "dir": "long",
    "entry": 0.1362,
