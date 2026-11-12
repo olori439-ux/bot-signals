@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "TSLABUSDT",
-   "dir": "long",
-   "entry": 390.47,
-   "sl": 384.3739,
-   "tp1": 395.72,
-   "tp2": 400.63017,
-   "time": "2026-11-12T10:32:36.625Z",
-   "status": "open"
-  },
-  {
    "symbol": "BCHUSDT",
    "dir": "short",
    "entry": 230.7,
