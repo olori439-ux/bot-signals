@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "WLDUSDT",
-   "dir": "short",
-   "entry": 0.3142,
-   "sl": 0.32830843,
-   "tp1": 0.308,
-   "tp2": 0.3029,
-   "time": "2026-11-11T22:43:37.275Z",
-   "status": "pending"
-  },
-  {
    "symbol": "SUIUSDT",
    "dir": "short",
    "entry": 0.8375,
