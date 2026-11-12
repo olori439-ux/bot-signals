@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "BNSOLUSDT",
-   "dir": "short",
-   "entry": 95.3,
-   "sl": 98.832035,
-   "tp1": 94,
-   "tp2": 92.4,
-   "time": "2026-11-11T06:07:35.881Z",
-   "status": "open"
-  },
-  {
    "symbol": "AEROUSDT",
    "dir": "short",
    "entry": 0.5488,
