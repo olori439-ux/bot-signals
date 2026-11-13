@@ -242,16 +242,6 @@
    "status": "pending"
   },
   {
-   "symbol": "PUMPUSDT",
-   "dir": "short",
-   "entry": 0.00347,
-   "sl": 0.0036529155,
-   "tp1": 0.003408,
-   "tp2": 0.003345,
-   "time": "2026-11-13T11:50:48.288Z",
-   "status": "open"
-  },
-  {
    "symbol": "BCHUSDT",
    "dir": "short",
    "entry": 226,
