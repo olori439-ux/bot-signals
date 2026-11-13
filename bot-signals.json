@@ -309,7 +309,7 @@
    "tp1": 0.3,
    "tp2": 0.295,
    "time": "2026-11-13T12:17:49.273Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "APTUSDT",
@@ -319,7 +319,7 @@
    "tp1": 0.5336,
    "tp2": 0.5213,
    "time": "2026-11-13T12:52:48.288Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "PENGUUSDT",
