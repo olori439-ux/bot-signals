@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T11:50:48.288Z",
+ "updated": "2026-11-13T12:15:49.555Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -300,6 +300,16 @@
    "tp2": 0.003345,
    "time": "2026-11-13T11:50:48.288Z",
    "status": "open"
+  },
+  {
+   "symbol": "BCHUSDT",
+   "dir": "short",
+   "entry": 226,
+   "sl": 233.55369,
+   "tp1": 223.3,
+   "tp2": 214.1,
+   "time": "2026-11-13T12:15:49.555Z",
+   "status": "pending"
   }
  ]
 }
