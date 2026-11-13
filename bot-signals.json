@@ -132,16 +132,6 @@
    "status": "pending"
   },
   {
-   "symbol": "REUSDT",
-   "dir": "short",
-   "entry": 0.2626,
-   "sl": 0.27589377,
-   "tp1": 0.2529,
-   "tp2": 0.2469,
-   "time": "2026-11-12T21:00:41.070Z",
-   "status": "open"
-  },
-  {
    "symbol": "ARUSDT",
    "dir": "short",
    "entry": 3.058,
