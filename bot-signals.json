@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "LINKUSDT",
-   "dir": "short",
-   "entry": 10.122,
-   "sl": 10.429544,
-   "tp1": 10.016,
-   "tp2": 9.77,
-   "time": "2026-11-12T22:36:32.936Z",
-   "status": "open"
-  },
-  {
    "symbol": "RENDERUSDT",
    "dir": "short",
    "entry": 1.522,
