@@ -299,7 +299,7 @@
    "tp1": 223.3,
    "tp2": 214.1,
    "time": "2026-11-13T12:15:49.555Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "WLDUSDT",
@@ -329,7 +329,7 @@
    "tp1": 0.006047,
    "tp2": 0.005846,
    "time": "2026-11-13T12:58:49.581Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "QNTUSDT",
