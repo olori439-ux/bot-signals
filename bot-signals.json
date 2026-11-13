@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T17:00:53.341Z",
+ "updated": "2026-11-13T20:05:55.211Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -320,6 +320,16 @@
    "tp2": 0.3101283,
    "time": "2026-11-13T17:00:53.341Z",
    "status": "open"
+  },
+  {
+   "symbol": "SNXXBUSDT",
+   "dir": "short",
+   "entry": 3.52,
+   "sl": 3.984179,
+   "tp1": 3.19,
+   "tp2": 2.7463684,
+   "time": "2026-11-13T20:05:55.211Z",
+   "status": "pending"
   }
  ]
 }
