@@ -259,7 +259,7 @@
    "tp1": 0.607,
    "tp2": 0.5642121,
    "time": "2026-11-13T06:28:33.240Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "XPLUSDT",
@@ -269,7 +269,7 @@
    "tp1": 0.0486,
    "tp2": 0.045867036,
    "time": "2026-11-13T07:02:33.829Z",
-   "status": "pending"
+   "status": "open"
   }
  ]
 }
