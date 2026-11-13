@@ -182,16 +182,6 @@
    "status": "pending"
   },
   {
-   "symbol": "FETUSDT",
-   "dir": "short",
-   "entry": 0.144,
-   "sl": 0.15062011,
-   "tp1": 0.1401,
-   "tp2": 0.13296648,
-   "time": "2026-11-13T05:16:10.541Z",
-   "status": "open"
-  },
-  {
    "symbol": "VIRTUALUSDT",
    "dir": "short",
    "entry": 0.5093,
