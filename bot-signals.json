@@ -242,16 +242,6 @@
    "status": "open"
   },
   {
-   "symbol": "STXUSDT",
-   "dir": "short",
-   "entry": 0.2872,
-   "sl": 0.30130224,
-   "tp1": 0.2816,
-   "tp2": 0.26369626,
-   "time": "2026-11-13T09:54:36.548Z",
-   "status": "open"
-  },
-  {
    "symbol": "INITUSDT",
    "dir": "short",
    "entry": 0.1291,
