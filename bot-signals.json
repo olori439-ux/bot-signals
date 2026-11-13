@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "BONKUSDT",
-   "dir": "short",
-   "entry": 2.77e-06,
-   "sl": 2.88523e-06,
-   "tp1": 2.72e-06,
-   "tp2": 2.66e-06,
-   "time": "2026-11-12T00:31:34.317Z",
-   "status": "pending"
-  },
-  {
    "symbol": "WUSDT",
    "dir": "short",
    "entry": 0.0103,
