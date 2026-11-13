@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "JSTUSDT",
-   "dir": "long",
-   "entry": 0.14472,
-   "sl": 0.14292353,
-   "tp1": 0.14558,
-   "tp2": 0.14734,
-   "time": "2026-11-12T12:55:32.608Z",
-   "status": "open"
-  },
-  {
    "symbol": "TIAUSDT",
    "dir": "short",
    "entry": 0.4297,
