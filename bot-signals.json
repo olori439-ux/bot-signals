@@ -102,16 +102,6 @@
    "status": "open"
   },
   {
-   "symbol": "FILUSDT",
-   "dir": "short",
-   "entry": 0.7371,
-   "sl": 0.76350702,
-   "tp1": 0.71949532,
-   "tp2": 0.6930883,
-   "time": "2026-11-12T19:06:35.529Z",
-   "status": "open"
-  },
-  {
    "symbol": "ARBUSDT",
    "dir": "short",
    "entry": 0.1497,
