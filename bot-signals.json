@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T15:02:42.639Z",
+ "updated": "2026-11-13T15:50:52.408Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -319,6 +319,36 @@
    "tp1": 138.52,
    "tp2": 137.07,
    "time": "2026-11-13T15:02:42.639Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ENAUSDT",
+   "dir": "short",
+   "entry": 0.1393,
+   "sl": 0.14736464,
+   "tp1": 0.1317,
+   "tp2": 0.12585893,
+   "time": "2026-11-13T15:50:52.407Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "CRCLBUSDT",
+   "dir": "short",
+   "entry": 63.13,
+   "sl": 65.82271,
+   "tp1": 61.53,
+   "tp2": 58.642151,
+   "time": "2026-11-13T15:50:52.407Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "SHIBUSDT",
+   "dir": "short",
+   "entry": 4.34e-06,
+   "sl": 4.4908653e-06,
+   "tp1": 4.22e-06,
+   "tp2": 4.16e-06,
+   "time": "2026-11-13T15:50:52.408Z",
    "status": "pending"
   }
  ]
