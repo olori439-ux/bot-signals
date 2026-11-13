@@ -222,16 +222,6 @@
    "status": "pending"
   },
   {
-   "symbol": "BCHUSDT",
-   "dir": "short",
-   "entry": 226,
-   "sl": 233.55369,
-   "tp1": 223.3,
-   "tp2": 214.1,
-   "time": "2026-11-13T12:15:49.555Z",
-   "status": "open"
-  },
-  {
    "symbol": "APTUSDT",
    "dir": "short",
    "entry": 0.5573,
