@@ -122,16 +122,6 @@
    "status": "open"
   },
   {
-   "symbol": "AVAXUSDT",
-   "dir": "short",
-   "entry": 8.416,
-   "sl": 8.6886453,
-   "tp1": 8.287,
-   "tp2": 8.068,
-   "time": "2026-11-13T01:31:33.933Z",
-   "status": "open"
-  },
-  {
    "symbol": "XAUTUSDT",
    "dir": "short",
    "entry": 3911.63,
