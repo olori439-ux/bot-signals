@@ -122,16 +122,6 @@
    "status": "pending"
   },
   {
-   "symbol": "SOXSBUSDT",
-   "dir": "short",
-   "entry": 44.32,
-   "sl": 49.226349,
-   "tp1": 41.8,
-   "tp2": 36.142751,
-   "time": "2026-11-13T00:29:33.742Z",
-   "status": "open"
-  },
-  {
    "symbol": "TAOUSDT",
    "dir": "short",
    "entry": 215.9,
