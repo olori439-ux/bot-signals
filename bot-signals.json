@@ -32,26 +32,6 @@
    "status": "open"
   },
   {
-   "symbol": "POLUSDT",
-   "dir": "short",
-   "entry": 0.08847,
-   "sl": 0.091028103,
-   "tp1": 0.08756,
-   "tp2": 0.08667,
-   "time": "2026-11-11T22:00:37.799Z",
-   "status": "open"
-  },
-  {
-   "symbol": "WUSDT",
-   "dir": "short",
-   "entry": 0.0103,
-   "sl": 0.010658885,
-   "tp1": 0.01009,
-   "tp2": 0.0097018582,
-   "time": "2026-11-12T02:07:37.414Z",
-   "status": "open"
-  },
-  {
    "symbol": "PARTIUSDT",
    "dir": "short",
    "entry": 0.0356,
