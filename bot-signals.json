@@ -122,16 +122,6 @@
    "status": "open"
   },
   {
-   "symbol": "NVDABUSDT",
-   "dir": "short",
-   "entry": 164.4,
-   "sl": 173.12255,
-   "tp1": 159.88,
-   "tp2": 155.1,
-   "time": "2026-11-13T15:00:42.260Z",
-   "status": "pending"
-  },
-  {
    "symbol": "SPCXBUSDT",
    "dir": "short",
    "entry": 140.74,
