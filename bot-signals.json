@@ -122,16 +122,6 @@
    "status": "open"
   },
   {
-   "symbol": "SPCXBUSDT",
-   "dir": "short",
-   "entry": 140.74,
-   "sl": 144.92832,
-   "tp1": 138.52,
-   "tp2": 137.07,
-   "time": "2026-11-13T15:02:42.639Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ENAUSDT",
    "dir": "short",
    "entry": 0.1393,
