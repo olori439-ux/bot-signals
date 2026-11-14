@@ -102,16 +102,6 @@
    "status": "open"
   },
   {
-   "symbol": "OPUSDT",
-   "dir": "short",
-   "entry": 0.0929,
-   "sl": 0.097549662,
-   "tp1": 0.089800225,
-   "tp2": 0.085150564,
-   "time": "2026-11-13T06:22:33.561Z",
-   "status": "open"
-  },
-  {
    "symbol": "XPLUSDT",
    "dir": "short",
    "entry": 0.05041,
