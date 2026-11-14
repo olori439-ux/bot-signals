@@ -72,16 +72,6 @@
    "status": "open"
   },
   {
-   "symbol": "ARUSDT",
-   "dir": "short",
-   "entry": 3.058,
-   "sl": 3.210894,
-   "tp1": 2.885,
-   "tp2": 2.8031767,
-   "time": "2026-11-12T21:27:39.823Z",
-   "status": "open"
-  },
-  {
    "symbol": "RENDERUSDT",
    "dir": "short",
    "entry": 1.522,
