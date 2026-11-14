@@ -82,16 +82,6 @@
    "status": "open"
   },
   {
-   "symbol": "TAOUSDT",
-   "dir": "short",
-   "entry": 215.9,
-   "sl": 223.24912,
-   "tp1": 204.2,
-   "tp2": 203.65146,
-   "time": "2026-11-13T01:29:36.599Z",
-   "status": "open"
-  },
-  {
    "symbol": "XAUTUSDT",
    "dir": "short",
    "entry": 3911.63,
