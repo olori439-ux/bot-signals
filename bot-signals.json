@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "AVAXUSDT",
-   "dir": "short",
-   "entry": 8.334,
-   "sl": 8.6579895,
-   "tp1": 8,
-   "tp2": 7.7940174,
-   "time": "2026-11-13T22:00:32.687Z",
-   "status": "pending"
-  },
-  {
    "symbol": "FETUSDT",
    "dir": "short",
    "entry": 0.1469,
