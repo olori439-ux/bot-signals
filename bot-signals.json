@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:01:03.170Z",
+ "updated": "2026-11-14T02:22:32.116Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -182,16 +182,6 @@
    "status": "pending"
   },
   {
-   "symbol": "APTUSDT",
-   "dir": "short",
-   "entry": 0.5573,
-   "sl": 0.57856312,
-   "tp1": 0.5336,
-   "tp2": 0.5213,
-   "time": "2026-11-13T12:52:48.288Z",
-   "status": "open"
-  },
-  {
    "symbol": "PENGUUSDT",
    "dir": "short",
    "entry": 0.006204,
@@ -329,6 +319,16 @@
    "tp1": 8.151,
    "tp2": 8.443,
    "time": "2026-11-14T00:01:03.170Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "FETUSDT",
+   "dir": "short",
+   "entry": 0.1469,
+   "sl": 0.15383721,
+   "tp1": 0.1428,
+   "tp2": 0.1392,
+   "time": "2026-11-14T02:22:32.116Z",
    "status": "pending"
   }
  ]
