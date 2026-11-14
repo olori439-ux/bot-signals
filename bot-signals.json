@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "ETHFIUSDT",
-   "dir": "short",
-   "entry": 0.6243,
-   "sl": 0.66035274,
-   "tp1": 0.607,
-   "tp2": 0.5642121,
-   "time": "2026-11-13T06:28:33.240Z",
-   "status": "open"
-  },
-  {
    "symbol": "XPLUSDT",
    "dir": "short",
    "entry": 0.05041,
