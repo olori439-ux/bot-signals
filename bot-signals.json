@@ -12,16 +12,6 @@
    "status": "open"
   },
   {
-   "symbol": "INITUSDT",
-   "dir": "long",
-   "entry": 0.23268,
-   "sl": 0.095371634,
-   "tp1": 0.3221,
-   "tp2": 0.46152728,
-   "time": "2026-11-11T08:21:33.291Z",
-   "status": "open"
-  },
-  {
    "symbol": "PARTIUSDT",
    "dir": "short",
    "entry": 0.0356,
