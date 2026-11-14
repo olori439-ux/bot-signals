@@ -62,16 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "ARBUSDT",
-   "dir": "short",
-   "entry": 0.1497,
-   "sl": 0.15655273,
-   "tp1": 0.1424,
-   "tp2": 0.13827878,
-   "time": "2026-11-12T20:00:42.563Z",
-   "status": "open"
-  },
-  {
    "symbol": "RENDERUSDT",
    "dir": "short",
    "entry": 1.522,
