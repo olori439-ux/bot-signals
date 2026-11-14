@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "RENDERUSDT",
-   "dir": "short",
-   "entry": 1.522,
-   "sl": 1.5787593,
-   "tp1": 1.453,
-   "tp2": 1.4274011,
-   "time": "2026-11-13T00:01:34.734Z",
-   "status": "open"
-  },
-  {
    "symbol": "XPLUSDT",
    "dir": "short",
    "entry": 0.05041,
@@ -129,16 +119,6 @@
    "tp1": 0.62114547,
    "tp2": 0.59766366,
    "time": "2026-11-14T08:28:35.629Z",
-   "status": "open"
-  },
-  {
-   "symbol": "INJUSDT",
-   "dir": "long",
-   "entry": 7.903,
-   "sl": 7.3938728,
-   "tp1": 8.094,
-   "tp2": 8.295,
-   "time": "2026-11-14T08:45:38.309Z",
    "status": "open"
   },
   {
