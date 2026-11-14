@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "DOGEUSDT",
-   "dir": "short",
-   "entry": 0.06747,
-   "sl": 0.069281489,
-   "tp1": 0.06638,
-   "tp2": 0.06452,
-   "time": "2026-11-13T00:07:34.680Z",
-   "status": "pending"
-  },
-  {
    "symbol": "TAOUSDT",
    "dir": "short",
    "entry": 215.9,
