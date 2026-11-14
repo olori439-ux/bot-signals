@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "INITUSDT",
-   "dir": "short",
-   "entry": 0.1291,
-   "sl": 0.15571554,
-   "tp1": 0.11046,
-   "tp2": 0.084740763,
-   "time": "2026-11-13T10:45:37.515Z",
-   "status": "pending"
-  },
-  {
    "symbol": "MSTRBUSDT",
    "dir": "short",
    "entry": 113.43,
