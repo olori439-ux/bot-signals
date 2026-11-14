@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "BEBUSDT",
-   "dir": "short",
-   "entry": 194.63,
-   "sl": 207.63054,
-   "tp1": 181.31,
-   "tp2": 172.96243,
-   "time": "2026-11-13T20:51:55.311Z",
-   "status": "pending"
-  },
-  {
    "symbol": "AVAXUSDT",
    "dir": "short",
    "entry": 8.334,
