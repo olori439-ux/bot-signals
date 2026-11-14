@@ -62,26 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "XAUTUSDT",
-   "dir": "short",
-   "entry": 3911.63,
-   "sl": 3956.1823,
-   "tp1": 3850.48,
-   "tp2": 3837.3762,
-   "time": "2026-11-13T03:15:14.339Z",
-   "status": "open"
-  },
-  {
-   "symbol": "PAXGUSDT",
-   "dir": "short",
-   "entry": 3913.57,
-   "sl": 3957.1212,
-   "tp1": 3853.56,
-   "tp2": 3840.9846,
-   "time": "2026-11-13T03:16:10.378Z",
-   "status": "open"
-  },
-  {
    "symbol": "XPLUSDT",
    "dir": "short",
    "entry": 0.05041,
