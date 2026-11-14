@@ -82,16 +82,6 @@
    "status": "pending"
   },
   {
-   "symbol": "ASTERUSDT",
-   "dir": "short",
-   "entry": 0.6368,
-   "sl": 0.6602818,
-   "tp1": 0.62114547,
-   "tp2": 0.59766366,
-   "time": "2026-11-14T08:28:35.629Z",
-   "status": "open"
-  },
-  {
    "symbol": "GRAMUSDT",
    "dir": "short",
    "entry": 1.089,
