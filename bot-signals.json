@@ -272,16 +272,6 @@
    "status": "open"
   },
   {
-   "symbol": "INJUSDT",
-   "dir": "long",
-   "entry": 7.944,
-   "sl": 7.4454213,
-   "tp1": 8.151,
-   "tp2": 8.443,
-   "time": "2026-11-14T00:01:03.170Z",
-   "status": "open"
-  },
-  {
    "symbol": "FETUSDT",
    "dir": "short",
    "entry": 0.1469,
