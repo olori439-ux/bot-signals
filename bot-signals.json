@@ -12,16 +12,6 @@
    "status": "open"
   },
   {
-   "symbol": "PARTIUSDT",
-   "dir": "short",
-   "entry": 0.0356,
-   "sl": 0.038534551,
-   "tp1": 0.0344,
-   "tp2": 0.030709082,
-   "time": "2026-11-12T02:27:35.094Z",
-   "status": "open"
-  },
-  {
    "symbol": "OPGUSDT",
    "dir": "long",
    "entry": 0.1362,
