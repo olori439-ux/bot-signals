@@ -122,16 +122,6 @@
    "status": "open"
   },
   {
-   "symbol": "IMXUSDT",
-   "dir": "short",
-   "entry": 0.1151,
-   "sl": 0.12698755,
-   "tp1": 0.10717497,
-   "tp2": 0.095287415,
-   "time": "2026-11-13T04:28:10.317Z",
-   "status": "pending"
-  },
-  {
    "symbol": "VIRTUALUSDT",
    "dir": "short",
    "entry": 0.5093,
