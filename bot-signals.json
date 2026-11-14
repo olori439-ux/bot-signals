@@ -52,16 +52,6 @@
    "status": "open"
   },
   {
-   "symbol": "XPLUSDT",
-   "dir": "short",
-   "entry": 0.05041,
-   "sl": 0.053135778,
-   "tp1": 0.0486,
-   "tp2": 0.045867036,
-   "time": "2026-11-13T07:02:33.829Z",
-   "status": "open"
-  },
-  {
    "symbol": "SNXXBUSDT",
    "dir": "short",
    "entry": 3.52,
