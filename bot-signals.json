@@ -172,16 +172,6 @@
    "status": "open"
   },
   {
-   "symbol": "ASTERUSDT",
-   "dir": "short",
-   "entry": 0.6565,
-   "sl": 0.67700206,
-   "tp1": 0.6476,
-   "tp2": 0.6368,
-   "time": "2026-11-13T08:00:38.131Z",
-   "status": "open"
-  },
-  {
    "symbol": "INITUSDT",
    "dir": "short",
    "entry": 0.1291,
