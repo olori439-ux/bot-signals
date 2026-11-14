@@ -102,16 +102,6 @@
    "status": "pending"
   },
   {
-   "symbol": "JSTUSDT",
-   "dir": "long",
-   "entry": 0.14557,
-   "sl": 0.14385332,
-   "tp1": 0.14661,
-   "tp2": 0.14843113,
-   "time": "2026-11-14T13:53:38.111Z",
-   "status": "open"
-  },
-  {
    "symbol": "INITUSDT",
    "dir": "short",
    "entry": 0.10023,
@@ -129,7 +119,7 @@
    "tp1": 0.04827,
    "tp2": 0.053733883,
    "time": "2026-11-14T18:47:33.796Z",
-   "status": "pending"
+   "status": "open"
   }
  ]
 }
