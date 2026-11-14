@@ -182,16 +182,6 @@
    "status": "pending"
   },
   {
-   "symbol": "PENGUUSDT",
-   "dir": "short",
-   "entry": 0.006204,
-   "sl": 0.0064360231,
-   "tp1": 0.006047,
-   "tp2": 0.005846,
-   "time": "2026-11-13T12:58:49.581Z",
-   "status": "open"
-  },
-  {
    "symbol": "QNTUSDT",
    "dir": "short",
    "entry": 165.05,
