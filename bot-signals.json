@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T09:03:31.112Z",
+ "updated": "2026-11-15T09:11:31.599Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -199,7 +199,7 @@
    "tp1": 0.01227,
    "tp2": 0.01152,
    "time": "2026-11-15T06:03:33.110Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "牛来USDT",
@@ -229,6 +229,16 @@
    "tp1": 178.8,
    "tp2": 171.50565,
    "time": "2026-11-15T09:03:31.112Z",
+   "status": "open"
+  },
+  {
+   "symbol": "RENDERUSDT",
+   "dir": "short",
+   "entry": 1.394,
+   "sl": 1.4807588,
+   "tp1": 1.314,
+   "tp2": 1.249402,
+   "time": "2026-11-15T09:11:31.599Z",
    "status": "open"
   }
  ]
