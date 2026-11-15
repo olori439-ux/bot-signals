@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T10:48:33.657Z",
+ "updated": "2026-11-15T11:11:32.908Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -350,6 +350,26 @@
    "tp2": 3.5931252e-06,
    "time": "2026-11-15T10:48:33.657Z",
    "status": "open"
+  },
+  {
+   "symbol": "QNTUSDT",
+   "dir": "short",
+   "entry": 152.16,
+   "sl": 162.43719,
+   "tp1": 138.89,
+   "tp2": 135.03134,
+   "time": "2026-11-15T11:11:32.908Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "HBARUSDT",
+   "dir": "short",
+   "entry": 0.05848,
+   "sl": 0.061325915,
+   "tp1": 0.05744,
+   "tp2": 0.05495,
+   "time": "2026-11-15T11:11:32.908Z",
+   "status": "pending"
   }
  ]
 }
