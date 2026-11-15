@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "SPCXBUSDT",
-   "dir": "short",
-   "entry": 136.58,
-   "sl": 138.99041,
-   "tp1": 134.54,
-   "tp2": 132.56265,
-   "time": "2026-11-15T03:07:34.638Z",
-   "status": "open"
-  },
-  {
    "symbol": "HYPEUSDT",
    "dir": "short",
    "entry": 66.24,
