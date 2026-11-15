@@ -212,16 +212,6 @@
    "status": "open"
   },
   {
-   "symbol": "ASTERUSDT",
-   "dir": "short",
-   "entry": 0.5296,
-   "sl": 0.57629719,
-   "tp1": 0.4805,
-   "tp2": 0.45177135,
-   "time": "2026-11-15T09:30:36.602Z",
-   "status": "open"
-  },
-  {
    "symbol": "BTCUSDT",
    "dir": "short",
    "entry": 66189.88,
