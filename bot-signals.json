@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T13:06:35.138Z",
+ "updated": "2026-11-15T13:56:32.577Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -390,6 +390,16 @@
    "tp2": 0.054640285,
    "time": "2026-11-15T13:06:35.138Z",
    "status": "open"
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "dir": "short",
+   "entry": 7.288,
+   "sl": 7.6804125,
+   "tp1": 6.936,
+   "tp2": 6.743,
+   "time": "2026-11-15T13:56:32.577Z",
+   "status": "pending"
   }
  ]
 }
