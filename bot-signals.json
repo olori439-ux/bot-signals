@@ -62,16 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "GOOGLBUSDT",
-   "dir": "short",
-   "entry": 288.82,
-   "sl": 294.79955,
-   "tp1": 284.83363,
-   "tp2": 278.85408,
-   "time": "2026-11-15T01:59:41.643Z",
-   "status": "open"
-  },
-  {
    "symbol": "NEARUSDT",
    "dir": "short",
    "entry": 3.142,
