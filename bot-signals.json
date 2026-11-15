@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T03:14:34.579Z",
+ "updated": "2026-11-15T03:25:36.476Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -149,6 +149,36 @@
    "tp1": 880.5,
    "tp2": 775.11387,
    "time": "2026-11-15T03:14:34.579Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "UNIUSDT",
+   "dir": "short",
+   "entry": 5.017,
+   "sl": 5.4307601,
+   "tp1": 4.7411599,
+   "tp2": 4.3273998,
+   "time": "2026-11-15T03:25:36.476Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "XLMUSDT",
+   "dir": "short",
+   "entry": 0.1376,
+   "sl": 0.14642444,
+   "tp1": 0.13171704,
+   "tp2": 0.12289259,
+   "time": "2026-11-15T03:25:36.476Z",
+   "status": "open"
+  },
+  {
+   "symbol": "STRKUSDT",
+   "dir": "short",
+   "entry": 0.03644,
+   "sl": 0.039187638,
+   "tp1": 0.03318,
+   "tp2": 0.032,
+   "time": "2026-11-15T03:25:36.476Z",
    "status": "pending"
   }
  ]
