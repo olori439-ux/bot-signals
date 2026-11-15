@@ -359,7 +359,7 @@
    "tp1": 138.89,
    "tp2": 135.03134,
    "time": "2026-11-15T11:11:32.908Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "HBARUSDT",
@@ -369,7 +369,7 @@
    "tp1": 0.05744,
    "tp2": 0.05495,
    "time": "2026-11-15T11:11:32.908Z",
-   "status": "pending"
+   "status": "open"
   }
  ]
 }
