@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T03:05:38.072Z",
+ "updated": "2026-11-15T03:06:35.999Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -109,7 +109,17 @@
    "tp1": 2.9657863,
    "tp2": 2.7014658,
    "time": "2026-11-15T03:05:38.072Z",
-   "status": "pending"
+   "status": "open"
+  },
+  {
+   "symbol": "CAKEUSDT",
+   "dir": "short",
+   "entry": 1.625,
+   "sl": 1.7111863,
+   "tp1": 1.581,
+   "tp2": 1.4813562,
+   "time": "2026-11-15T03:06:35.999Z",
+   "status": "open"
   }
  ]
 }
