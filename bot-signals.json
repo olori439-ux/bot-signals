@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "STOUSDT",
-   "dir": "short",
-   "entry": 0.026,
-   "sl": 0.028641147,
-   "tp1": 0.0246,
-   "tp2": 0.021598089,
-   "time": "2026-11-14T13:28:34.289Z",
-   "status": "pending"
-  },
-  {
    "symbol": "NIGHTUSDT",
    "dir": "long",
    "entry": 0.04674,
