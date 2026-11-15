@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "ZECUSDT",
-   "dir": "short",
-   "entry": 917.2,
-   "sl": 1002.4517,
-   "tp1": 880.5,
-   "tp2": 775.11387,
-   "time": "2026-11-15T03:14:34.579Z",
-   "status": "open"
-  },
-  {
    "symbol": "UNIUSDT",
    "dir": "short",
    "entry": 5.017,
