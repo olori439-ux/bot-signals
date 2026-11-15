@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T03:07:34.638Z",
+ "updated": "2026-11-15T03:10:37.062Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -130,6 +130,16 @@
    "tp2": 132.56265,
    "time": "2026-11-15T03:07:34.638Z",
    "status": "pending"
+  },
+  {
+   "symbol": "HYPEUSDT",
+   "dir": "short",
+   "entry": 66.24,
+   "sl": 71.354676,
+   "tp1": 64.48,
+   "tp2": 57.71554,
+   "time": "2026-11-15T03:10:37.062Z",
+   "status": "open"
   }
  ]
 }
