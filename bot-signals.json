@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T21:20:47.525Z",
+ "updated": "2026-11-15T23:08:33.525Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -450,6 +450,36 @@
    "tp2": 0.37223166,
    "time": "2026-11-15T21:20:47.525Z",
    "status": "open"
+  },
+  {
+   "symbol": "LTCUSDT",
+   "dir": "short",
+   "entry": 45.8,
+   "sl": 47.393127,
+   "tp1": 44.56,
+   "tp2": 43.43,
+   "time": "2026-11-15T23:08:33.525Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "MSTRBUSDT",
+   "dir": "short",
+   "entry": 101.4,
+   "sl": 105.28543,
+   "tp1": 98.53,
+   "tp2": 94.99,
+   "time": "2026-11-15T23:08:33.525Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "PUMPUSDT",
+   "dir": "short",
+   "entry": 0.002968,
+   "sl": 0.0031489789,
+   "tp1": 0.002862,
+   "tp2": 0.002765,
+   "time": "2026-11-15T23:08:33.525Z",
+   "status": "pending"
   }
  ]
 }
