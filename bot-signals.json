@@ -42,16 +42,6 @@
    "status": "open"
   },
   {
-   "symbol": "FETUSDT",
-   "dir": "short",
-   "entry": 0.1469,
-   "sl": 0.15383721,
-   "tp1": 0.1428,
-   "tp2": 0.1392,
-   "time": "2026-11-14T02:22:32.116Z",
-   "status": "pending"
-  },
-  {
    "symbol": "GRAMUSDT",
    "dir": "short",
    "entry": 1.089,
