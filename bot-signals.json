@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T11:05:49.722Z",
+ "updated": "2026-11-16T14:40:50.169Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -480,6 +480,16 @@
    "tp2": 34.56,
    "time": "2026-11-16T11:05:49.722Z",
    "status": "open"
+  },
+  {
+   "symbol": "GOOGLBUSDT",
+   "dir": "short",
+   "entry": 292.51,
+   "sl": 298.84208,
+   "tp1": 288.2,
+   "tp2": 285,
+   "time": "2026-11-16T14:40:50.169Z",
+   "status": "pending"
   }
  ]
 }
