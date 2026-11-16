@@ -32,16 +32,6 @@
    "status": "open"
   },
   {
-   "symbol": "NIGHTUSDT",
-   "dir": "long",
-   "entry": 0.04674,
-   "sl": 0.04254367,
-   "tp1": 0.04827,
-   "tp2": 0.053733883,
-   "time": "2026-11-14T18:47:33.796Z",
-   "status": "open"
-  },
-  {
    "symbol": "ZAMAUSDT",
    "dir": "short",
    "entry": 0.05364,
