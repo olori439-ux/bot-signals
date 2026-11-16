@@ -92,16 +92,6 @@
    "status": "open"
   },
   {
-   "symbol": "XRPUSDT",
-   "dir": "short",
-   "entry": 0.9983,
-   "sl": 1.0553175,
-   "tp1": 0.9457,
-   "tp2": 0.90327086,
-   "time": "2026-11-15T04:02:36.675Z",
-   "status": "pending"
-  },
-  {
    "symbol": "PLUMEUSDT",
    "dir": "short",
    "entry": 0.0128,
