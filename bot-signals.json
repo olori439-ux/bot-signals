@@ -322,16 +322,6 @@
    "status": "open"
   },
   {
-   "symbol": "LTCUSDT",
-   "dir": "short",
-   "entry": 45.8,
-   "sl": 47.393127,
-   "tp1": 44.56,
-   "tp2": 43.43,
-   "time": "2026-11-15T23:08:33.525Z",
-   "status": "pending"
-  },
-  {
    "symbol": "PUMPUSDT",
    "dir": "short",
    "entry": 0.002968,
