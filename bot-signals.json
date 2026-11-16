@@ -152,16 +152,6 @@
    "status": "open"
   },
   {
-   "symbol": "WBTCUSDT",
-   "dir": "short",
-   "entry": 66258.62,
-   "sl": 68873.074,
-   "tp1": 65027.13,
-   "tp2": 63309.9,
-   "time": "2026-11-15T09:56:33.620Z",
-   "status": "pending"
-  },
-  {
    "symbol": "BCHUSDT",
    "dir": "short",
    "entry": 208.4,
