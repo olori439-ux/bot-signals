@@ -272,16 +272,6 @@
    "status": "open"
   },
   {
-   "symbol": "ETHFIUSDT",
-   "dir": "short",
-   "entry": 0.5097,
-   "sl": 0.53891458,
-   "tp1": 0.4685,
-   "tp2": 0.46100903,
-   "time": "2026-11-15T16:00:56.852Z",
-   "status": "pending"
-  },
-  {
    "symbol": "RESOLVUSDT",
    "dir": "short",
    "entry": 0.01301,
