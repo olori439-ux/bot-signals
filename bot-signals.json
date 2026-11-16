@@ -329,7 +329,7 @@
    "tp1": 0.0048,
    "tp2": 0.004608,
    "time": "2026-11-15T20:18:38.077Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "BARDUSDT",
@@ -479,7 +479,7 @@
    "tp1": 37.22,
    "tp2": 34.56,
    "time": "2026-11-16T11:05:49.722Z",
-   "status": "pending"
+   "status": "open"
   }
  ]
 }
