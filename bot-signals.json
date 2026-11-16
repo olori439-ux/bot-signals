@@ -282,16 +282,6 @@
    "status": "open"
   },
   {
-   "symbol": "INJUSDT",
-   "dir": "short",
-   "entry": 7.134,
-   "sl": 7.7062834,
-   "tp1": 6.658,
-   "tp2": 6.1801944,
-   "time": "2026-11-15T13:57:32.719Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ETHFIUSDT",
    "dir": "short",
    "entry": 0.5097,
