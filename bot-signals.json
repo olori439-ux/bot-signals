@@ -282,16 +282,6 @@
    "status": "open"
   },
   {
-   "symbol": "ENAUSDT",
-   "dir": "short",
-   "entry": 0.1219,
-   "sl": 0.12936002,
-   "tp1": 0.1181,
-   "tp2": 0.1105,
-   "time": "2026-11-15T16:49:43.548Z",
-   "status": "pending"
-  },
-  {
    "symbol": "POLUSDT",
    "dir": "short",
    "entry": 0.08093,
