@@ -102,16 +102,6 @@
    "status": "pending"
   },
   {
-   "symbol": "MUBUSDT",
-   "dir": "short",
-   "entry": 767.54,
-   "sl": 790.78483,
-   "tp1": 757.97,
-   "tp2": 728.79861,
-   "time": "2026-11-15T03:32:36.461Z",
-   "status": "open"
-  },
-  {
    "symbol": "XRPUSDT",
    "dir": "short",
    "entry": 0.9983,
@@ -369,7 +359,7 @@
    "tp1": 0.01195,
    "tp2": 0.01143,
    "time": "2026-11-15T16:00:56.852Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "ENAUSDT",
