@@ -382,16 +382,6 @@
    "status": "open"
   },
   {
-   "symbol": "SOXSBUSDT",
-   "dir": "long",
-   "entry": 53.69,
-   "sl": 50.109369,
-   "tp1": 54.95,
-   "tp2": 59.657718,
-   "time": "2026-11-16T04:00:48.197Z",
-   "status": "open"
-  },
-  {
    "symbol": "MUBUSDT",
    "dir": "short",
    "entry": 761.12,
