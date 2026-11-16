@@ -362,16 +362,6 @@
    "status": "pending"
   },
   {
-   "symbol": "MSTRBUSDT",
-   "dir": "short",
-   "entry": 101.4,
-   "sl": 105.28543,
-   "tp1": 98.53,
-   "tp2": 94.99,
-   "time": "2026-11-15T23:08:33.525Z",
-   "status": "open"
-  },
-  {
    "symbol": "PUMPUSDT",
    "dir": "short",
    "entry": 0.002968,
