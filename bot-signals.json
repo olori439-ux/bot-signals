@@ -412,16 +412,6 @@
    "status": "open"
   },
   {
-   "symbol": "DOTUSDT",
-   "dir": "short",
-   "entry": 0.734,
-   "sl": 0.76061277,
-   "tp1": 0.725,
-   "tp2": 0.683,
-   "time": "2026-11-16T23:32:35.471Z",
-   "status": "open"
-  },
-  {
    "symbol": "STRKUSDT",
    "dir": "short",
    "entry": 0.03442,
