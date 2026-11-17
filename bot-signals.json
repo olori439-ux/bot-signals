@@ -362,16 +362,6 @@
    "status": "open"
   },
   {
-   "symbol": "WBTCUSDT",
-   "dir": "short",
-   "entry": 64764.61,
-   "sl": 66228.3,
-   "tp1": 64072.21,
-   "tp2": 63309.9,
-   "time": "2026-11-17T06:21:32.724Z",
-   "status": "open"
-  },
-  {
    "symbol": "KITEUSDT",
    "dir": "long",
    "entry": 0.1277,
