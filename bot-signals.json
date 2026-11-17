@@ -362,16 +362,6 @@
    "status": "open"
   },
   {
-   "symbol": "KAVAUSDT",
-   "dir": "short",
-   "entry": 0.03185,
-   "sl": 0.038500834,
-   "tp1": 0.02879,
-   "tp2": 0.0261,
-   "time": "2026-11-16T10:15:48.911Z",
-   "status": "pending"
-  },
-  {
    "symbol": "ZROUSDT",
    "dir": "short",
    "entry": 1.485,
