@@ -32,16 +32,6 @@
    "status": "open"
   },
   {
-   "symbol": "ZAMAUSDT",
-   "dir": "short",
-   "entry": 0.05364,
-   "sl": 0.057206863,
-   "tp1": 0.051262091,
-   "tp2": 0.047695228,
-   "time": "2026-11-14T23:48:34.326Z",
-   "status": "open"
-  },
-  {
    "symbol": "NEARUSDT",
    "dir": "short",
    "entry": 3.142,
