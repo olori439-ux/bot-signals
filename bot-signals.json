@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T00:42:36.155Z",
+ "updated": "2026-11-17T01:00:38.384Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -509,6 +509,16 @@
    "tp1": 0.0401,
    "tp2": 0.028351361,
    "time": "2026-11-17T00:42:36.155Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "DASHUSDT",
+   "dir": "short",
+   "entry": 37.45,
+   "sl": 38.95082,
+   "tp1": 36.72,
+   "tp2": 34.56,
+   "time": "2026-11-17T01:00:38.384Z",
    "status": "pending"
   }
  ]
