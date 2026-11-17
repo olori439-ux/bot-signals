@@ -262,16 +262,6 @@
    "status": "open"
   },
   {
-   "symbol": "POLUSDT",
-   "dir": "short",
-   "entry": 0.08093,
-   "sl": 0.08394687,
-   "tp1": 0.07915,
-   "tp2": 0.07687,
-   "time": "2026-11-15T17:00:53.305Z",
-   "status": "open"
-  },
-  {
    "symbol": "SHELLUSDT",
    "dir": "long",
    "entry": 0.03165,
@@ -479,7 +469,7 @@
    "tp1": 0.03391,
    "tp2": 0.03319,
    "time": "2026-11-17T00:01:40.811Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "REQUSDT",
