@@ -192,16 +192,6 @@
    "status": "open"
   },
   {
-   "symbol": "VIRTUALUSDT",
-   "dir": "short",
-   "entry": 0.4515,
-   "sl": 0.47570371,
-   "tp1": 0.4196,
-   "tp2": 0.41116049,
-   "time": "2026-11-15T13:05:35.930Z",
-   "status": "open"
-  },
-  {
    "symbol": "DOGEUSDT",
    "dir": "short",
    "entry": 0.0593,
