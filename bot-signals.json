@@ -352,16 +352,6 @@
    "status": "pending"
   },
   {
-   "symbol": "OPUSDT",
-   "dir": "short",
-   "entry": 0.0783,
-   "sl": 0.081797516,
-   "tp1": 0.0757,
-   "tp2": 0.072470806,
-   "time": "2026-11-17T06:00:34.834Z",
-   "status": "open"
-  },
-  {
    "symbol": "KITEUSDT",
    "dir": "long",
    "entry": 0.1277,
