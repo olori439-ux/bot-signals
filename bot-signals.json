@@ -62,16 +62,6 @@
    "status": "open"
   },
   {
-   "symbol": "PLUMEUSDT",
-   "dir": "short",
-   "entry": 0.0128,
-   "sl": 0.013741872,
-   "tp1": 0.01227,
-   "tp2": 0.01152,
-   "time": "2026-11-15T06:03:33.110Z",
-   "status": "open"
-  },
-  {
    "symbol": "牛来USDT",
    "dir": "short",
    "entry": 0.05049,
