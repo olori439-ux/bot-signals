@@ -402,16 +402,6 @@
    "status": "open"
   },
   {
-   "symbol": "MARSCOINUSDT",
-   "dir": "short",
-   "entry": 0.0342,
-   "sl": 0.036579104,
-   "tp1": 0.0334,
-   "tp2": 0.0322,
-   "time": "2026-11-16T17:29:39.063Z",
-   "status": "open"
-  },
-  {
    "symbol": "TRUMPUSDT",
    "dir": "short",
    "entry": 0.948,
