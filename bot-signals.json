@@ -192,16 +192,6 @@
    "status": "open"
   },
   {
-   "symbol": "HBARUSDT",
-   "dir": "short",
-   "entry": 0.05848,
-   "sl": 0.061325915,
-   "tp1": 0.05744,
-   "tp2": 0.05495,
-   "time": "2026-11-15T11:11:32.908Z",
-   "status": "open"
-  },
-  {
    "symbol": "BNSOLUSDT",
    "dir": "short",
    "entry": 82.7,
