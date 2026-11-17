@@ -332,16 +332,6 @@
    "status": "open"
   },
   {
-   "symbol": "INITUSDT",
-   "dir": "short",
-   "entry": 0.10476,
-   "sl": 0.12494339,
-   "tp1": 0.09474,
-   "tp2": 0.071121021,
-   "time": "2026-11-16T06:03:49.309Z",
-   "status": "open"
-  },
-  {
    "symbol": "TLMUSDT",
    "dir": "short",
    "entry": 0.000927,
