@@ -322,16 +322,6 @@
    "status": "open"
   },
   {
-   "symbol": "LINKUSDT",
-   "dir": "short",
-   "entry": 9.2,
-   "sl": 9.5365515,
-   "tp1": 9.045,
-   "tp2": 8.621,
-   "time": "2026-11-16T21:00:19.244Z",
-   "status": "open"
-  },
-  {
    "symbol": "REQUSDT",
    "dir": "short",
    "entry": 0.0439,
@@ -359,7 +349,7 @@
    "tp1": 157.46,
    "tp2": 155.13,
    "time": "2026-11-17T03:48:37.294Z",
-   "status": "pending"
+   "status": "open"
   },
   {
    "symbol": "PUMPUSDT",
