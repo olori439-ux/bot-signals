@@ -252,16 +252,6 @@
    "status": "open"
   },
   {
-   "symbol": "PENGUUSDT",
-   "dir": "short",
-   "entry": 0.004989,
-   "sl": 0.0052736936,
-   "tp1": 0.0048,
-   "tp2": 0.004608,
-   "time": "2026-11-15T20:18:38.077Z",
-   "status": "open"
-  },
-  {
    "symbol": "BARDUSDT",
    "dir": "short",
    "entry": 0.1011,
