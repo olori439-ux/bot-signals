@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:34:35.094Z",
+ "updated": "2026-11-17T07:40:49.925Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -530,6 +530,16 @@
    "tp2": 134.54,
    "time": "2026-11-17T06:34:35.094Z",
    "status": "open"
+  },
+  {
+   "symbol": "KITEUSDT",
+   "dir": "long",
+   "entry": 0.1277,
+   "sl": 0.12045633,
+   "tp1": 0.1311,
+   "tp2": 0.1342,
+   "time": "2026-11-17T07:40:49.925Z",
+   "status": "pending"
   }
  ]
 }
