@@ -422,16 +422,6 @@
    "status": "pending"
   },
   {
-   "symbol": "AAVEUSDT",
-   "dir": "short",
-   "entry": 108.18,
-   "sl": 112.81525,
-   "tp1": 105.72,
-   "tp2": 103.82,
-   "time": "2026-11-16T18:00:48.756Z",
-   "status": "open"
-  },
-  {
    "symbol": "TRUMPUSDT",
    "dir": "short",
    "entry": 0.948,
