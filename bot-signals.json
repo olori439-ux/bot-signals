@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T06:09:32.606Z",
+ "updated": "2026-11-17T06:21:32.724Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -519,6 +519,16 @@
    "tp1": 64294.11,
    "tp2": 63777,
    "time": "2026-11-17T06:09:32.606Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "WBTCUSDT",
+   "dir": "short",
+   "entry": 64764.61,
+   "sl": 66228.3,
+   "tp1": 64072.21,
+   "tp2": 63309.9,
+   "time": "2026-11-17T06:21:32.724Z",
    "status": "pending"
   }
  ]
