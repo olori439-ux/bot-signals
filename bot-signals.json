@@ -332,16 +332,6 @@
    "status": "open"
   },
   {
-   "symbol": "MUBUSDT",
-   "dir": "short",
-   "entry": 761.12,
-   "sl": 787.90982,
-   "tp1": 751.31,
-   "tp2": 739.39,
-   "time": "2026-11-16T04:05:48.416Z",
-   "status": "pending"
-  },
-  {
    "symbol": "INITUSDT",
    "dir": "short",
    "entry": 0.10476,
