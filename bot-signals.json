@@ -442,16 +442,6 @@
    "status": "open"
   },
   {
-   "symbol": "SPCXBUSDT",
-   "dir": "short",
-   "entry": 137.52,
-   "sl": 140.47845,
-   "tp1": 135.91,
-   "tp2": 134.54,
-   "time": "2026-11-17T06:34:35.094Z",
-   "status": "open"
-  },
-  {
    "symbol": "KITEUSDT",
    "dir": "long",
    "entry": 0.1277,
