@@ -342,16 +342,6 @@
    "status": "open"
   },
   {
-   "symbol": "NVDABUSDT",
-   "dir": "short",
-   "entry": 160.61,
-   "sl": 166.04573,
-   "tp1": 157.46,
-   "tp2": 155.13,
-   "time": "2026-11-17T03:48:37.294Z",
-   "status": "open"
-  },
-  {
    "symbol": "PUMPUSDT",
    "dir": "short",
    "entry": 0.002896,
