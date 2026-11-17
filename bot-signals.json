@@ -452,16 +452,6 @@
    "status": "pending"
   },
   {
-   "symbol": "JUPUSDT",
-   "dir": "short",
-   "entry": 0.2485,
-   "sl": 0.26213131,
-   "tp1": 0.2348,
-   "tp2": 0.22578115,
-   "time": "2026-11-17T04:32:33.132Z",
-   "status": "open"
-  },
-  {
    "symbol": "OPUSDT",
    "dir": "short",
    "entry": 0.0783,
