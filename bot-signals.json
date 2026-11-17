@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T18:12:32.641Z",
+ "updated": "2026-11-17T19:00:34.469Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -490,6 +490,26 @@
    "tp2": 3803,
    "time": "2026-11-17T18:12:32.641Z",
    "status": "open"
+  },
+  {
+   "symbol": "ETHFIUSDT",
+   "dir": "short",
+   "entry": 0.4807,
+   "sl": 0.50632915,
+   "tp1": 0.4626,
+   "tp2": 0.43798475,
+   "time": "2026-11-17T19:00:34.469Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "RAYUSDT",
+   "dir": "short",
+   "entry": 1.4143,
+   "sl": 1.4742104,
+   "tp1": 1.393,
+   "tp2": 1.3569,
+   "time": "2026-11-17T19:00:34.469Z",
+   "status": "pending"
   }
  ]
 }
