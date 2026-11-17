@@ -332,16 +332,6 @@
    "status": "open"
   },
   {
-   "symbol": "GOOGLBUSDT",
-   "dir": "short",
-   "entry": 292.51,
-   "sl": 298.84208,
-   "tp1": 288.2,
-   "tp2": 285,
-   "time": "2026-11-16T14:40:50.169Z",
-   "status": "pending"
-  },
-  {
    "symbol": "WLDUSDT",
    "dir": "short",
    "entry": 0.2658,
