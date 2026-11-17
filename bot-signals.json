@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T15:00:19.920Z",
+ "updated": "2026-11-17T15:49:55.669Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -402,16 +402,6 @@
    "status": "open"
   },
   {
-   "symbol": "BTCUSDT",
-   "dir": "short",
-   "entry": 64796.01,
-   "sl": 66213.599,
-   "tp1": 64294.11,
-   "tp2": 63777,
-   "time": "2026-11-17T06:09:32.606Z",
-   "status": "open"
-  },
-  {
    "symbol": "WBTCUSDT",
    "dir": "short",
    "entry": 64764.61,
@@ -479,6 +469,16 @@
    "tp1": 0.1307,
    "tp2": 0.124,
    "time": "2026-11-17T15:00:19.920Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ADAUSDT",
+   "dir": "short",
+   "entry": 0.1519,
+   "sl": 0.15789008,
+   "tp1": 0.1484,
+   "tp2": 0.1432,
+   "time": "2026-11-17T15:49:55.669Z",
    "status": "pending"
   }
  ]
