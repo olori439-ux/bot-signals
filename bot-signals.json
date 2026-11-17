@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T18:00:37.223Z",
+ "updated": "2026-11-17T18:12:32.641Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -490,6 +490,16 @@
    "tp2": 3815.82,
    "time": "2026-11-17T18:00:37.223Z",
    "status": "open"
+  },
+  {
+   "symbol": "PAXGUSDT",
+   "dir": "short",
+   "entry": 3853.13,
+   "sl": 3897.2927,
+   "tp1": 3832.89,
+   "tp2": 3803,
+   "time": "2026-11-17T18:12:32.641Z",
+   "status": "pending"
   }
  ]
 }
