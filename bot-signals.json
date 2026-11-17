@@ -322,16 +322,6 @@
    "status": "open"
   },
   {
-   "symbol": "PUMPUSDT",
-   "dir": "short",
-   "entry": 0.002968,
-   "sl": 0.0031489789,
-   "tp1": 0.002862,
-   "tp2": 0.002765,
-   "time": "2026-11-15T23:08:33.525Z",
-   "status": "open"
-  },
-  {
    "symbol": "SKLUSDT",
    "dir": "short",
    "entry": 0.00312,
