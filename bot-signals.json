@@ -302,16 +302,6 @@
    "status": "open"
   },
   {
-   "symbol": "PUMPUSDT",
-   "dir": "short",
-   "entry": 0.002896,
-   "sl": 0.00305189,
-   "tp1": 0.002816,
-   "tp2": 0.002726,
-   "time": "2026-11-17T04:01:34.888Z",
-   "status": "pending"
-  },
-  {
    "symbol": "KITEUSDT",
    "dir": "long",
    "entry": 0.1277,
