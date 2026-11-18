@@ -22,16 +22,6 @@
    "status": "open"
   },
   {
-   "symbol": "GRAMUSDT",
-   "dir": "short",
-   "entry": 1.089,
-   "sl": 1.1379562,
-   "tp1": 1.0563625,
-   "tp2": 1.0074063,
-   "time": "2026-11-14T09:25:33.674Z",
-   "status": "open"
-  },
-  {
    "symbol": "NEARUSDT",
    "dir": "short",
    "entry": 3.142,
