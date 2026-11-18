@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T00:17:40.019Z",
+ "updated": "2026-11-18T01:21:41.781Z",
  "signals": [
   {
    "symbol": "PROMUSDT",
@@ -499,6 +499,16 @@
    "tp1": 5.715,
    "tp2": 5.9914635,
    "time": "2026-11-18T00:17:40.019Z",
+   "status": "pending"
+  },
+  {
+   "symbol": "ICPUSDT",
+   "dir": "short",
+   "entry": 2.304,
+   "sl": 2.4277335,
+   "tp1": 2.212,
+   "tp2": 2.159,
+   "time": "2026-11-18T01:21:41.781Z",
    "status": "pending"
   }
  ]
