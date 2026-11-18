@@ -222,16 +222,6 @@
    "status": "open"
   },
   {
-   "symbol": "MEGAUSDT",
-   "dir": "long",
-   "entry": 0.04903,
-   "sl": 0.0461614,
-   "tp1": 0.05128,
-   "tp2": 0.053810999,
-   "time": "2026-11-16T01:31:35.007Z",
-   "status": "open"
-  },
-  {
    "symbol": "SLPUSDT",
    "dir": "short",
    "entry": 0.000416,
