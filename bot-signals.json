@@ -22,16 +22,6 @@
    "status": "open"
   },
   {
-   "symbol": "NEARUSDT",
-   "dir": "short",
-   "entry": 3.142,
-   "sl": 3.4063205,
-   "tp1": 2.9657863,
-   "tp2": 2.7014658,
-   "time": "2026-11-15T03:05:38.072Z",
-   "status": "open"
-  },
-  {
    "symbol": "HYPEUSDT",
    "dir": "short",
    "entry": 66.24,
