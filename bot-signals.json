@@ -412,16 +412,6 @@
    "status": "open"
   },
   {
-   "symbol": "XAUTUSDT",
-   "dir": "short",
-   "entry": 3849.99,
-   "sl": 3893.7707,
-   "tp1": 3830.82,
-   "tp2": 3815.82,
-   "time": "2026-11-17T18:00:37.223Z",
-   "status": "open"
-  },
-  {
    "symbol": "PAXGUSDT",
    "dir": "short",
    "entry": 3853.13,
