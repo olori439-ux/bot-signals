@@ -372,16 +372,6 @@
    "status": "open"
   },
   {
-   "symbol": "XPLUSDT",
-   "dir": "short",
-   "entry": 0.04491,
-   "sl": 0.047134575,
-   "tp1": 0.04313,
-   "tp2": 0.04232,
-   "time": "2026-11-17T19:31:37.616Z",
-   "status": "open"
-  },
-  {
    "symbol": "SUIUSDT",
    "dir": "short",
    "entry": 0.7267,
